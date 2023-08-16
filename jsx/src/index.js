@@ -15,18 +15,7 @@ function App() {
 	//return <input type={inputType} min={minValue} />;
 
 	const message = "test";
-	return (	
-		<input
-			style={{ border: '3px solid red', color: 'red'}}
-			type="number"
-			min={5}
-			max={10}
-			list={[1, 2, 3]}
-			//style={{ color:'red' }}
-			alt={message}
-		/>
-	);
-	
+	return <textarea autofocus={true} />;
 }
 
 /* 5) Show the component on the screen */
