@@ -1,15 +1,7 @@
-function ProfileCard({ title, handle }) {
-	/* Destructuring */
-	//const title = props.title;
-	//const handle = props.handle;
-
-	/* Equal to above code */
-	//const { title, handle } = props;
-
-	console.log(title, handle);	// Console log
-
+function ProfileCard({ title, handle, image }) {
 	return (
 	<div>
+		<img src={image} alt="pda logo"/>
 		<div>Title is {title}</div>
 		<div>Handle is {handle}</div>
 	</div>
