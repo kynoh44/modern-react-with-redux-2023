@@ -1,10 +1,12 @@
 function ProfileCard({ title, handle }) {
-	/* D structuring */
+	/* Destructuring */
 	//const title = props.title;
 	//const handle = props.handle;
 
 	/* Equal to above code */
 	//const { title, handle } = props;
+
+	console.log(title, handle);	// Console log
 
 	return (
 	<div>
