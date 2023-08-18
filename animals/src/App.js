@@ -1,19 +1,13 @@
 function App() {
-	//const handleClick = function() {
-	//	console.log('Button was clicked!');
-	//};
 	/*
-	Arrow function is equivalent with a definition of this function
-	And this definition can be defined below code block.
+	Inline arrow function is common in professional projects.
 	*/
 	
 	return (
 		<div>
 			<button
-				onClick={() => {
-					console.log('Button was clicked!');
-				}}
-			>Add Animal
+				onClick={() => console.log('Button was clicked!')}>
+					Add Animal
 			</button>
 		</div>
 	);
