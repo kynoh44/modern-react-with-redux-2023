@@ -1,5 +1,5 @@
 function App() {
-	const handleMouseMove = () => {
+	const handleClick = () => {
 		console.log('Button was clicked!')
 	};
 	/*
@@ -9,7 +9,8 @@ function App() {
 
 	return (
 		<div>
-		<button onMouseMove={handleMouseMove}>
+		<button
+			onClick={handleClick}>
 			Add Animal
 		</button>
 	</div>
