@@ -7,10 +7,17 @@ function App() {
 		return [1, 10, 32, 40];
 	}
 
-	const myArray = makeArray();
-	const firstElement = myArray[0];
-	const secondElement = myArray[1];
+	/* Test 0 */
+	//const myArray = makeArray();
+	//const firstElement = myArray[0];
+	//const secondElement = myArray[1];
+	//console.log(firstElement, secondElement);
+
+	/* Test 1 */
+	const [firstElement, secondElement] = makeArray();
 	console.log(firstElement, secondElement);
+
+
 
 
 
