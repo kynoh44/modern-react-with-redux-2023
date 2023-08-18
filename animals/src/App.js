@@ -15,7 +15,7 @@ function App() {
 					Add Animal
 			</button>
 
-			<button onClick={handleClick}>Test button</button>
+			<button onClick={handleClick}>Test button</button> {/* Reference of the arrow function */}
 		</div>
 	);
 }
