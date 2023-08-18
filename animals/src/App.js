@@ -1,18 +1,32 @@
-import { useState } from 'react';	// React library must be imported to use 'useState()' function in a component.
+import { useState } from 'react';
 
 function App() {
-	const [count, setCount] = useState(0);
 
-	const handleClick = () => {
-		setCount(count + 1);	// call of setter function, usally defined in an event handler
-	};
+	/* Test of array destructuring */
+	function makeArray() {
+		return [1, 10, 32, 40];
+	}
 
-	return (
-		<div>
-			<button onClick={handleClick}>Add Animal</button>
-			<div>Number of animals: {count}</div>
-		</div>
-	);
+	const myArray = makeArray();
+	const firstElement = myArray[0];
+	const secondElement = myArray[1];
+	console.log(firstElement, secondElement);
+
+
+
+
+	//const [count, setCount] = useState(0);
+
+	//const handleClick = () => {
+	//	setCount(count + 1);
+	//};
+
+	//return (
+	//	<div>
+	//		<button onClick={handleClick}>Add Animal</button>
+	//		<div>Number of animals: {count}</div>
+	//	</div>
+	//);
 }
 
 export default App;
