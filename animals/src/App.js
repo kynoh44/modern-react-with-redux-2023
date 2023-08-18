@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div>
 			<button
-				onClick={function() {
+				onClick={() => {
 					console.log('Button was clicked!');
 				}}
 			>Add Animal
