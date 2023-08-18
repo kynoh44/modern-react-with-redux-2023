@@ -1,21 +1,16 @@
+import { useState } from 'react';	// React library must be imported to use 'useState()' function in a component.
+
 function App() {
-	/*
-	Inline arrow function is common in professional projects.
-	*/
-	
-	// Define the arrow function
+	const [count, setCount] = useState(0);
+
 	const handleClick = () => {
-		console.log('Hello, there!');
+		setCount(count + 1);	// call of setter function, usally defined in an event handler
 	};
 
 	return (
 		<div>
-			<button
-				onClick={() => console.log('Button was clicked!')}>
-					Add Animal
-			</button>
-
-			<button onClick={handleClick}>Test button</button> {/* Reference of the arrow function */}
+			<button onClick={handleClick}>Add Animal</button>
+			<div>Number of animals: {count}</div>
 		</div>
 	);
 }
