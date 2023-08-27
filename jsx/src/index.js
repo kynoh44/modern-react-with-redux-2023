@@ -11,12 +11,8 @@ const root = ReactDOM.createRoot(el);
 
 /* 4) Create a component */
 function App() {
-	const inputType = "number";
-	const minValue = 5;
-	const maxValue = 10;
-
 	return (
-		<input type={inputType} min={minValue} max={maxValue}/>
+		<input type="number" min={5} max={10}/>
 	);
 }
 
