@@ -11,8 +11,14 @@ const root = ReactDOM.createRoot(el);
 
 /* 4) Create a component */
 function App() {
-	<h3>Bye there!</h3>	// Not returned, so not shown
-	return <h1>Hi there!</h1>;
+	let message = 'Bye there!';	// Initialization of a Varaible
+
+	/* Condition for Assigning to the Variable */
+	if (Math.random() > 0.5) {
+		message = 'Hello there!';
+	}
+
+	return <h1>{message}</h1>;	// How return JS Variable as an Element
 }
 
 /* 5) Show the component on the screen */
