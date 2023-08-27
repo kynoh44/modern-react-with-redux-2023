@@ -11,14 +11,13 @@ const root = ReactDOM.createRoot(el);
 
 /* 4) Create a component */
 function App() {
-	const bgColor = { backgroundColor: "blue" };
+	const custBorder = { border: "5px solid gold" };
 	return (
 		<div>
-			<input type="number" min={5} max={10}/>
-			<h1 style={{ backgroundColor: "red"}}>Hello world!</h1>
-			<h1 style={bgColor}>Hello world!</h1>
+			<input style={{border: '3px solid red'}} type="number" min={5} max={10}/>
+			<input style={custBorder} type="number" min={5} max={10}/>
 		</div>
-	);
+		);
 }
 
 /* 5) Show the component on the screen */
