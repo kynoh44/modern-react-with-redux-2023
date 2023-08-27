@@ -11,13 +11,7 @@ const root = ReactDOM.createRoot(el);
 
 /* 4) Create a component */
 function App() {
-	const custBorder = { border: "5px solid gold" };
-	return (
-		<div>
-			<input style={{border: '3px solid red'}} type="number" min={5} max={10}/>
-			<input style={custBorder} type="number" min={5} max={10}/>
-		</div>
-		);
+	return <textarea autoFocus={true} />;
 }
 
 /* 5) Show the component on the screen */
