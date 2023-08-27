@@ -11,9 +11,7 @@ const root = ReactDOM.createRoot(el);
 
 /* 4) Create a component */
 function App() {
-	const message = { color: 'red'};	// Object is invalid
-	
-	return <h1>{message}</h1>;
+	return <h1>{new Date().toLocaleDateString()}</h1>;
 }
 
 /* 5) Show the component on the screen */
