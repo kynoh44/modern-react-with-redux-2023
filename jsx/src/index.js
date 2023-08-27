@@ -11,16 +11,12 @@ const root = ReactDOM.createRoot(el);
 
 /* 4) Create a component */
 function App() {
-	/* Code about Contents */
-	const name = 'Samantha';	// Initialization of variable
-	const age = 23;
-	const kor_age = age + 1;	// Computation
+	const inputType = "number";
+	const minValue = 5;
+	const maxValue = 10;
 
 	return (
-		<h1>
-			Hi, my name is {name} and my age is {age}. {/* Reference the contents */}
-			My Korean age is {kor_age}.
-		</h1>
+		<input type={inputType} min={minValue} max={maxValue}/>
 	);
 }
 
