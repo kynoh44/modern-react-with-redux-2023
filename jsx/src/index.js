@@ -11,7 +11,8 @@ const root = ReactDOM.createRoot(el);
 
 /* 4) Create a component */
 function App() {
-	return <input maxLength={5} />;
+	return <textarea autoFocus />;	// Value of prop autoFocus is true
+	//return <textarea autoFocus={false} />;	// Value of prop autoFocus is false
 }
 
 /* 5) Show the component on the screen */
