@@ -8,3 +8,4 @@ function App() {
 
 /* 3) Export the component at the bottom */
 export default App;
+export const message = "MyApp";
