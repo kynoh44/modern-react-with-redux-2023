@@ -11,8 +11,13 @@ const root = ReactDOM.createRoot(el);
 
 /* 4) Create a component */
 function App() {
+	const bgColor = { backgroundColor: "blue" };
 	return (
-		<input type="number" min={5} max={10}/>
+		<div>
+			<input type="number" min={5} max={10}/>
+			<h1 style={{ backgroundColor: "red"}}>Hello world!</h1>
+			<h1 style={bgColor}>Hello world!</h1>
+		</div>
 	);
 }
 
