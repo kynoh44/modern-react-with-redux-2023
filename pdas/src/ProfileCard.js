@@ -1,5 +1,7 @@
 function ProfileCard(props) {
-	return <div style={ props }>Profile Card!!!</div>
+	return (
+		<div>{ props.test }</div>
+	);
 }
 
 export default ProfileCard;
