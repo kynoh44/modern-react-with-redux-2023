@@ -1,15 +1,16 @@
-import ProfileCard from './ProfileCard'
+import ProfileCard from './ProfileCard';
 
 function App() {
 	return (
 		<div>
 			<div>Personal Digital Assistants</div>
 
-			<ProfileCard />
-			<ProfileCard />
-			<ProfileCard />
+			<ProfileCard color= "red" />
+			<ProfileCard color= "blue"/>
+			<ProfileCard color= "gold"/>
 		</div>
 	);
 }
 
 export default App;
+
