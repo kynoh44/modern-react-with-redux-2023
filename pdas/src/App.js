@@ -9,12 +9,10 @@ console.log(SiriImage);
 function App() {
 	return (		
 		<div>
-			<img src= { AlexaImage } alt= "Alexa Image" />
-			<img src= { SiriImage } alt= "Siri Image" />
-			<img src= "/static/media/siri.e6a70a555204b3a1f6f0.png" alt= "Siri by fileName" />
-
 			<div>Personal Digital Assistants</div>
-
+			
+			<img src= {AlexaImage} alt="Alexa Image" />
+			<img src= {SiriImage} alt="Siri Image" />
 			<ProfileCard title = "Alexa" handle = "@alexa99" />
 			<ProfileCard title = "Cortana" handle = "@cortana32" />
 			<ProfileCard title = "Siri" handle = "@siri01" />
