@@ -5,6 +5,7 @@ import SiriImage from './images/siri.png';
 
 console.log(AlexaImage);
 console.log(CortanaImage);
+console.log(SiriImage);
 
 function App() {
 	return (
