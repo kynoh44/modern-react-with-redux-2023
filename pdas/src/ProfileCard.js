@@ -1,6 +1,5 @@
 function ProfileCard({ title, handle }) {	// Argument Destructuring
-	//const { title, handle } = props;	// Destructuring
-
+	console.log(title, handle);
 	return (
 		<div>
 			<div>Title is { title }</div>
