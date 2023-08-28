@@ -1,16 +1,14 @@
 import ProfileCard from './ProfileCard';
 
-const custProps = "Test2";
-
 function App() {
 	return (
 		<div>
 			<div>Personal Digital Assistants</div>
-			<h1>{ custProps }</h1>
-			<ProfileCard test= "red"/>
+			<ProfileCard title = "Alexa" handle = "@alexa99" />
+			<ProfileCard title = "Cortana" handle = "@cortana32" />
+			<ProfileCard title = "Siri" handle = "@siri01" />
 		</div>
 	);
 }
 
 export default App;
-

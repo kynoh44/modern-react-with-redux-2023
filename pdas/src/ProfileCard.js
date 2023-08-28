@@ -1,6 +1,9 @@
 function ProfileCard(props) {
 	return (
-		<div>{ props.test }</div>
+		<div>
+			<div>Title is { props.title }</div>
+			<div>Handle is { props.handle }</div>
+		</div>
 	);
 }
 
