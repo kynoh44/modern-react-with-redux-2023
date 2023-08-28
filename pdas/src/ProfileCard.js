@@ -1,5 +1,4 @@
-function ProfileCard({ title, handle }) {	// Argument Destructuring
-	console.log(title, handle);
+function ProfileCard({ title, handle }) {
 	return (
 		<div>
 			<div>Title is { title }</div>
