@@ -1,12 +1,11 @@
 function AnimalShow() {
-	/* Variation 01 of Event Handler */
-	function handleClick() {
-		console.log("Button was clicked!");
-	}
 
 	return (
 		<div>
-			<button onClick={handleClick}>Add Animal</button>
+			{/* Variation 02 of Event Handler */}
+			<button onClick={function() {
+				console.log("Button was clicked!");
+			}}>Add Animal</button>
 		</div>
 	);
 }
