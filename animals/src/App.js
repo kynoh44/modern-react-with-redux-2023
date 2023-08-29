@@ -1,12 +1,10 @@
 import AnimalShow from './AnimalShow';
-import TestMe from './Test';
 
 function App() {
 	return (
 		<div>
 			Show animal list here!
-			{/*<AnimalShow />*/}
-			<TestMe />
+			<AnimalShow />
 		</div>
 	);
 }
