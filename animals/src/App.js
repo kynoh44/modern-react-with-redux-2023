@@ -1,10 +1,12 @@
-import AnimalShow from './AnimalShow';
+import { useState } from "react";
 
 function App() {
+	const [count, setCount] = useState(0);
+
 	return (
 		<div>
-			Show animal list here!
-			<AnimalShow />
+			<button onClick={() => setCount(count + 1)}>Add Animal</button>
+			<div>Number of animals: {count}</div>
 		</div>
 	);
 }
