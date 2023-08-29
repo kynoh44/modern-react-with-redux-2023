@@ -1,5 +1,6 @@
-function AnimalShow({type}) {
-	return <div>{type}</div>;
+function AnimalShow() {
+
+	return <button>Show!</button>;
 }
 
 export default AnimalShow;
