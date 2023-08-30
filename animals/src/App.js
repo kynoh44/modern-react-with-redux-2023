@@ -2,10 +2,8 @@
 import { useState } from './useState';
 
 function App() {
-	const stateConfig = useState(0);
-	const stateVar = stateConfig.state;
-	const setterFunc = stateConfig.setterFunction;
-
+	const [stateVar, setterFunc] = useState(10);
+	
 	console.log(stateVar);
 	console.log(setterFunc);
 
