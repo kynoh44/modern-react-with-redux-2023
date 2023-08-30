@@ -1,13 +1,23 @@
-//import { useState } from "react"
-import { useState } from './useState';
+import { useState } from "react"
+
+function getRandomAnimal() {
+	const animals = ['bird', 'cat', 'cow', 'dog', 'gator', 'horse'];
+	return(animals[Math.floor(Math.random() * animals.length)]);
+}
 
 function App() {
-	const [stateVar, setterFunc] = useState(10);
-	
-	console.log(stateVar);
-	console.log(setterFunc);
+	const [animals, getRandomAnimal] = useState();
 
-	return ;
+	const handleClick = () => {
+		getRandomAnimal(animals);
+	};
+	
+	return(
+		<div>
+			<button onClick={handleClick}>Add Animals</button>
+
+		</div>
+	);
 }
 
 export default App;
