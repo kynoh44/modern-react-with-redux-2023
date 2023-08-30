@@ -1,18 +1,15 @@
-import { useState } from "react";
+//import { useState } from "react"
+import { useState } from './useState';
 
 function App() {
-	const [count, setCount] = useState(0);
+	const stateConfig = useState(0);
+	const stateVar = stateConfig.state;
+	const setterFunc = stateConfig.setterFunction;
 
-	const handleClick = () => {
-		setCount(count + 1);
-	}
+	console.log(stateVar);
+	console.log(setterFunc);
 
-	return (
-		<div>
-			<button onClick={handleClick}>Add Animal</button>
-			<div>Number of animals: {count}</div>
-		</div>
-	);
+	return ;
 }
 
 export default App;
