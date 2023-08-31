@@ -2,20 +2,25 @@ import { useState } from "react"
 
 function getRandomAnimal() {
 	const animals = ['bird', 'cat', 'cow', 'dog', 'gator', 'horse'];
+
 	return(animals[Math.floor(Math.random() * animals.length)]);
 }
 
 function App() {
-	const [animals, getRandomAnimal] = useState();
+	const [animals, setAnimals] = useState([]);
 
 	const handleClick = () => {
-		getRandomAnimal(animals);
-	};
-	
+		setAnimals([...animals, getRandomAnimal()]);
+		/* Modifies the value of state variable : NOT Recommended */
+		animals.push(getRandomAnimal());
+	}
+
 	return(
 		<div>
-			<button onClick={handleClick}>Add Animals</button>
-
+			<button onClick={handleClick}>Add Animal</button>
+			<div>
+				| {animals} |
+			</div>
 		</div>
 	);
 }
