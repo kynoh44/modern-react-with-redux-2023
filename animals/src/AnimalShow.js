@@ -1,4 +1,4 @@
-function AnimalShow({ type }) {	// Parameter takes Props Object from Parent Component
+function AnimalShow({ type }) {
 	return <div>{type}</div>;
 }
 

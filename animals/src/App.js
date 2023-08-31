@@ -1,5 +1,5 @@
 import { useState } from "react"
-import AnimalShow from "./AnimalShow";	// Import Child Component
+import AnimalShow from "./AnimalShow";
 
 function getRandomAnimal() {
 	const animals = ['bird', 'cat', 'cow', 'dog', 'gator', 'horse'];
@@ -12,16 +12,16 @@ function App() {
 
 	const handleClick = () => {
 		setAnimals([...animals, getRandomAnimal()]);
-		/* Modifies the value of state variable : NOT Recommended */
-		//animals.push(getRandomAnimal());
 	}
+
+	const renderedAnimals = animals.map((animal, index) => {
+		return <AnimalShow type={animal} key={index} />;
+	});
 
 	return(
 		<div>
 			<button onClick={handleClick}>Add Animal</button>
-			<div>
-				<AnimalShow type={animals}/>
-			</div>
+			<div>{renderedAnimals}</div>
 		</div>
 	);
 }
