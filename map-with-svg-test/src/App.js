@@ -1,14 +1,11 @@
 import { useState } from "react";
 import ChildComp from "./Child";
+import "./App.css"
 
 function getRandPlanets() {
   const planetName = [
-    "mercury",
-    "venus",
-    "earth",
-    "mars",
-    "saturn",
-    "uranus",
+    "mercury", "venus", "earth",
+    "mars", "saturn", "uranus",
     "neptune"
   ];
   return planetName[Math.floor(Math.random() * planetName.length)];
@@ -22,16 +19,15 @@ function App() {
   }
 
   const elComp = planets.map((planet, idx) => {
-    return <ChildComp name={planet} key={idx} />
+    return <ChildComp name={planet} key={idx} />;
   });
 
   return (
-    <div>
+    <div className="app">
       <button onClick={handleClick}>Add Planet!</button>
-      <section>{elComp}</section>
+      <div className="planet-list">{elComp}</div>
     </div>
   );
-
 }
 
 export default App;

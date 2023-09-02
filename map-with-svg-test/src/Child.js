@@ -1,39 +1,35 @@
 import "../node_modules/bulma/css/bulma.css"
-import mercury from "./PlanetImages/mercury.png"
-import venus from "./PlanetImages/venus.png"
-import earth from "./PlanetImages/earth.png"
-import mars from "./PlanetImages/mars.png"
-import jupiter from "./PlanetImages/jupiter.png"
-import saturn from "./PlanetImages/saturn.png"
-import uranus from "./PlanetImages/uranus.png"
-import neptune from "./PlanetImages/neptune.png"
+import mercury from "./PlanetImages/mercury.svg"
+import venus from "./PlanetImages/venus.svg"
+import earth from "./PlanetImages/earth.svg"
+import mars from "./PlanetImages/mars.svg"
+import jupiter from "./PlanetImages/jupiter.svg"
+import saturn from "./PlanetImages/saturn.svg"
+import uranus from "./PlanetImages/uranus.svg"
+import neptune from "./PlanetImages/neptune.svg"
+import starship from "./PlanetImages/starship.svg"
+import { useState } from "react"
+import "./Child.css"
 
 function Child({ name }) {
-	const names = [ mercury, venus, earth, mars, jupiter, saturn, uranus, neptune ];
-	let planet;
+	const [clicks, setClicks] = useState(0);
 
-	for (let idx = 0;idx < names.length; idx++) {
-		if (names[idx].match(name)) {
-			planet = names[idx];
-			//console.log(planet);
-			//console.log(names[idx]);
-		}
-	}	
-	
+	const names = {
+		mercury, venus, earth,
+		mars, jupiter, saturn,
+		uranus, neptune
+	};
+
 	return (
-		<div>
-			<section>
-				<figure>
-					<img className="has-ratio"
-					width="170"
-					height="170"
-					src={planet}
-					alt="Planet Image"/>
-				</figure>
-			</section>
-			<div>
-				{name}
-			</div>
+		<div className="planet-show"
+			onClick={() => {setClicks(clicks + 1); }}>
+			<img className="planet"
+				src={names[name]}
+				alt="Planet Image"/>
+			<img className="startship"
+				style={{width: 10 + 10 * clicks + "px"}}
+				src={starship}
+				alt="Startship Image"/>
 		</div>
 	);
 }
