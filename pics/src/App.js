@@ -6,9 +6,12 @@ function App() {
 		//searchImages(term);
 	};
 
-	return <div>
-		<SearchBar onSubmit={handleSubmit} />
-	</div>
+	return(
+		<div>
+			<SearchBar onSubmit={handleSubmit} />
+		</div>
+	)
 }
+
 
 export default App;
