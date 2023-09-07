@@ -13,12 +13,8 @@ function App() {
 
 	return(
 		<div>
-			<div>
 				<SearchBar onSubmit={handleSubmit} />
-			</div>
-			<div>
 				<ImageList images={images}/>
-			</div>
 		</div>
 	)
 }
