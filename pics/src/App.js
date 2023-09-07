@@ -3,7 +3,9 @@ import searchImages from "./api";
 
 function App() {
 	const handleSubmit = (term) => {
-		searchImages(term);
+		const results = searchImages(term);
+		
+		console.log(results);
 	};
 
 	return(
