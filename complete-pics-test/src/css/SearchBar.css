@@ -1,0 +1,11 @@
+.search-bar {
+	display: flex;
+	flex-direction: column;
+}
+
+.search-bar input {
+	padding: 10px;
+	border: 1px, solid lightslategray;
+	border-radius: 10px;
+	font-size: 30px;
+}

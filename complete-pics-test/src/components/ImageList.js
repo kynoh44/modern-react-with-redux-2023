@@ -1,11 +1,12 @@
 import ImageShow from "./ImageShow";
+import "../css/ImageList.css";
 
 function ImageList({ images }) {
-	const imgObjToCompArr = images.map((image) => {
-		return <ImageShow image={image} />
+	const imgObjToCompArr = images.map((image, key) => {
+		return <ImageShow key={image.id} image={image} />
 	});
 	return(
-		<div>
+		<div className="image-list">
 			{imgObjToCompArr}
 		</div>
 	);

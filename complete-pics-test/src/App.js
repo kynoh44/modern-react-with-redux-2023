@@ -2,6 +2,7 @@ import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import ImageList from "./components/ImageList";
 import searchImages from "./api";
+import "./css/App.css";
 
 function App() {
 	const [images, setImages] = useState([]);
@@ -13,8 +14,12 @@ function App() {
 
 	return(
 		<div>
-			<SearchBar onSubmit={handleSubmit}/>
-			<ImageList images={images} />
+			<section className="section-bar">
+				<SearchBar onSubmit={handleSubmit}/>
+			</section>
+			<section className="section-list">
+				<ImageList images={images} />
+			</section>
 		</div>
 	);
 }

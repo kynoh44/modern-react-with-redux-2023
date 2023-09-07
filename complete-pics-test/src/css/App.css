@@ -1,0 +1,14 @@
+.section-bar {
+	
+	padding-inline: 25px;
+	padding-block: 20px;
+	margin: 10px;
+}
+
+.section-list {
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	padding-inline: 25px;
+	padding-block: 20px;
+	margin: 10px;
+}
