@@ -6,8 +6,7 @@ function App() {
 	const [books, setBooks] = useState([]);
 
 	const createBook = (title) => {
-		// BAD CODE! Bug of Hot module Reload System
-		books.push({ id: 123, title: title});
+		// How manipulate and update arays, objects in state system??
 		console.log(books);
 		setBooks(books);
 	};
