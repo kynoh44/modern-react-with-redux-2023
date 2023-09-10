@@ -6,13 +6,16 @@ function App() {
 	const [books, setBooks] = useState([]);
 
 	const createBook = (title) => {
-		console.log("Need to add book with:", title);
-		setBooks([...books, [title]])
+		// BAD CODE! Bug of Hot module Reload System
+		books.push({ id: 123, title: title});
+		console.log(books);
+		setBooks(books);
 	};
 
 	return(
 	<div>
 		<div>
+			{books.length}
 			<label>Reading List</label>
 			<BookList books={books} />
 		</div>
