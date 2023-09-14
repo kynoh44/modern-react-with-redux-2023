@@ -1,26 +1,18 @@
 import { useState } from 'react';
 import BookCreate from './components/BookCreate';
-import BookList from './components/BookList';
 
 function App() {
 	const [books, setBooks] = useState([]);
 
 	const createBook = (title) => {
-		// How manipulate and update arays, objects in state system??
-		console.log(books);
-		setBooks(books);
+		const updatedBooks = [...books, { id: 123, title }];
+		setBooks(updatedBooks);
 	};
 
 	return(
 	<div>
-		<div>
-			{books.length}
-			<label>Reading List</label>
-			<BookList books={books} />
-		</div>
-		<div>
-			<BookCreate onCreate={createBook}/>
-		</div>
+		{books.length}
+		<BookCreate onCreate={createBook}/>
 	</div>
 	);
 }
