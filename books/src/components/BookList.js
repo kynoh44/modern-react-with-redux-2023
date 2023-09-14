@@ -1,19 +1,14 @@
 import BookShow from "./BookShow";
 
 function BookList({ books }) {
-
-	//console.log(books);
-
-	//const renderedBook = books.map((key, book) => {
-	//	return(
-	//		<BookShow key={books.id} book={books.title} />
-	//	);
-	//});
+	const renderedBook = books.map((book) => {
+		return(<BookShow book={book} />);
+	});
 
 	return(
 		<div>
 			Booklist
-			{/*{renderedBook}*/}
+			{renderedBook}
 		</div>
 	);
 }

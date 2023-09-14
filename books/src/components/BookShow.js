@@ -1,8 +1,8 @@
 function BookShow({ book }) {
 	return(
 	<div>
-		<img src="" alt={book} />
-		{book}
+		<img src="" alt={book.title} />
+		ID = {book.id} | TITLE = {book.title}
 	</div>
 	);
 }
