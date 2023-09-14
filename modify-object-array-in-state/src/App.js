@@ -1,4 +1,4 @@
-/*import {useState} from 'react';
+import {useState} from 'react';
 
 export default function App() {
   const [objArr, setObjArr] = useState([
@@ -11,50 +11,27 @@ export default function App() {
 const updateArr = objArr.map( (objEl) => {
 	if (objEl.id === 43) {
 		//return { id: objEl.id, val: 11, type: "int" };
-    return {id: objEl.id, val: 20.9, type: "double"};
+    //return {id: objEl.id, val: 20.9, type: "double"};
+    return { ...objEl, val: 9323 };
 	}
   return objEl;
-} );
+});
 
-const handleClick = () => {
-  setObjArr(updateArr);
-  console.log(objArr);
-}
+///* single object에 대한 modify & Add */
+//const [obj, setObj] = useState(
+//  { id: 43,		val: 10.93,		type: "float", size: 12 }
+//);
 
-return(
-  <div>
-    <button onClick={handleClick}>{objArr[2].val}</button>
-  </div>
-);
+//const updateObj = { ...obj, val: 9323, type: "void" };
 
-}*/
-
-
-import CreateBooks from './CreateBooks';
-import {useState} from 'react';
-
-export default function App() {
-
-  const [books, setBooks] = useState([
-    { id: 1, title: "Sense and Sensibility" },
-    { id: 2, title: "Oliver Twist" }
-  ]);
-
-  const changeTitleById = (id, newTitle) => {
-    const updatedBooks = books.map((book) => {
-      if (book.id === id) {
-        return { ...book, title: newTitle };
-      }
-      return book;
-    });
-    setBooks(updatedBooks);
-  };
-
-  console.log(books);
+  const handleClick = () => {
+    setObjArr(updateArr);
+    console.log(objArr);
+  }
 
   return(
     <div>
-    <CreateBooks onCreate={changeTitleById} />
+      <button onClick={handleClick}>{objArr[2].val}</button>
     </div>
   );
 }
