@@ -11,15 +11,10 @@ function App() {
 	};
 
 	return(
-	<div>
-		<div>
-			<BookList books={books} />
-		</div>
-		{books.length}
-		<div>
+		<div className="app">
+			<BookList books={books} />		
 			<BookCreate onCreate={createBook}/>			
 		</div>
-	</div>
 	);
 }
 
