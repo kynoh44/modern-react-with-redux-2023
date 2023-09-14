@@ -6,10 +6,7 @@ function BookList({ books }) {
 	});
 
 	return(
-		<div>
-			Booklist
-			{renderedBook}
-		</div>
+		<div className="book-list">{renderedBook}</div>
 	);
 }
 
