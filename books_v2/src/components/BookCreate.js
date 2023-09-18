@@ -2,7 +2,6 @@ import { useState } from "react";
 
 function BookCreate({ onCreate }) {
 	const [title, setTitle] = useState("");
-	const [id, setId] = useState(0);
 
 	const handleFormSubmit = (event) => {
 		event.preventDefault();
