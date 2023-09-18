@@ -19,10 +19,12 @@ function BookShow({ book, onDelete, onEdit }) {
 	}
 
 	return(
-		<div>
-			{content}
-			<button onClick={handleDelete}>Delete</button>
-			<button onClick={handleEdit}>Edit</button>
+		<div className="book-show">
+			<div>{content}</div>
+			<div className="actions">
+				<button className="edit" onClick={handleEdit}>Edit</button>
+				<button className="delete" onClick={handleDelete}>Delete</button>
+			</div>
 		</div>
 	);
 }

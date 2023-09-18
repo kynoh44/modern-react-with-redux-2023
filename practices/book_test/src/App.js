@@ -27,10 +27,10 @@ function App() {
 	};
 
 	return(
-		<div>
-			<label>Add a Book</label>
-			<BookCreate onCreate={createBook}/>
+		<div className='app'>
+			<h1>Reading List</h1>
 			<BookList books={books} onDelete={deleteBook} onEdit={editBook}/>
+			<BookCreate onCreate={createBook}/>
 		</div>
 	);
 }
