@@ -4,7 +4,7 @@ import { useState } from "react";
 function BookShow({ book, onDelete, onEdit }) {
 	const [showEdit, setShowEdit] = useState(false);
 	
-	const handleClick = () => {
+	const handleDelete = () => {
 		onDelete(book.id);
 	};
 
@@ -20,7 +20,7 @@ function BookShow({ book, onDelete, onEdit }) {
 	return(
 		<div>
 			{content}
-			<button onClick={handleClick}>Delete</button>
+			<button onClick={handleDelete}>Delete</button>
 			<button onClick={handleEdit}>Edit</button>
 		</div>
 	);
