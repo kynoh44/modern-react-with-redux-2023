@@ -9,13 +9,19 @@ function App() {
 		setBooks(updatedBooks);
 	};
 
-	console.log(books);
+	const deleteBook = (target) => {
+		console.log(target);
+		const deleteById = books.filter((book) => {
+			return book.id != target;
+		});
+		setBooks(deleteById);
+	};
 
 	return(
 		<div>
 			<label>Add a Book</label>
 			<BookCreate onCreate={createBook}/>
-			<BookList books={books}/>
+			<BookList books={books} onDelete={deleteBook} />
 		</div>
 	);
 }
