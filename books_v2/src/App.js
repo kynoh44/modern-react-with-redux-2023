@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BookCreate from './components/BookCreate';
 import BookList from './components/BookList';
 import axios from 'axios';
@@ -12,8 +12,9 @@ function App() {
 		setBooks(response.data);
 	};
 
-	// NEVER EVER DO THIS with GET Method
-	//fetchBooks();
+	useEffect(() => {
+		fetchBooks();
+	}, []);
 
 	const editBookById = (id, newTitle) => {
 		const updatedBooks = books.map((book) => {
