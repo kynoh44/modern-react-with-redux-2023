@@ -12,6 +12,9 @@ function App() {
 		setBooks(response.data);
 	};
 
+	// NEVER EVER DO THIS with GET Method
+	//fetchBooks();
+
 	const editBookById = (id, newTitle) => {
 		const updatedBooks = books.map((book) => {
 			if (book.id === id) {
