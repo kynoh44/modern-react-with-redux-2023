@@ -10,7 +10,9 @@ function App() {
 		{
 			title
 		});
-		console.log(response);
+		
+		const updatedBooks = [ ...books, response.data ];
+		setBooks(updatedBooks);
 	};
 
 	const deleteBook = (target) => {
