@@ -11,8 +11,6 @@ function App() {
 			title
 		});
 		console.log(response);
-		// setBooks는 왜 안쓰지? data를 rest client api server에 저장하니까?
-		// books도 아예 안쓰인다.
 	};
 
 	const deleteBook = (target) => {
