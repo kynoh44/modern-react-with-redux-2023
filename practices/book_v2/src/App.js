@@ -1,12 +1,18 @@
 import { useState } from 'react';
 import BookCreate from './component/BookCreate';
 import BookList from './component/BookList';
+import axios from 'axios';
 
 function App() {
 	const [books, setBooks] = useState([]);
-	const createBook = (title) => {
-		const updatedBooks = [...books, {id: Math.round(Math.random() * 9999), title}];
-		setBooks(updatedBooks);
+	const createBook = async (title) => {
+		const response = await axios.post("http://localhost:3001/books",
+		{
+			title
+		});
+		console.log(response);
+		// setBooks는 왜 안쓰지? data를 rest client api server에 저장하니까?
+		// books도 아예 안쓰인다.
 	};
 
 	const deleteBook = (target) => {
