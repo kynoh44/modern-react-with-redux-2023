@@ -24,6 +24,7 @@ function App() {
 
 	useEffect(() => {
 		fetchBooks();
+		console.log("fetchBooks function is called only at the initial rendering.");
 	}, []);
 
 	const deleteBook = (target) => {
