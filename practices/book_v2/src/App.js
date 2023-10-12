@@ -24,8 +24,8 @@ function App() {
 
 	useEffect(() => {
 		fetchBooks();
-		console.log("fetchBooks function is called only at the initial rendering.");
-	}, []);
+		console.log("fetchBooks function is called in every rendering.");
+	}, );
 
 	const deleteBook = (target) => {
 		const deleteById = books.filter((book) => {
