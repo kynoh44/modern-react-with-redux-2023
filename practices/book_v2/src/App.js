@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BookCreate from './component/BookCreate';
 import BookList from './component/BookList';
 import axios from 'axios';
@@ -22,8 +22,9 @@ function App() {
 		setBooks(response.data);
 	};
 
-	/* Never ever do this with GET method */
-	fetchBooks();	// Infinite loop of rendering occurs by the definition
+	useEffect(() => {
+		fetchBooks();
+	}, []);
 
 	const deleteBook = (target) => {
 		const deleteById = books.filter((book) => {
