@@ -22,6 +22,9 @@ function App() {
 		setBooks(response.data);
 	};
 
+	/* Never ever do this with GET method */
+	fetchBooks();	// Infinite loop of rendering occurs by the definition
+
 	const deleteBook = (target) => {
 		const deleteById = books.filter((book) => {
 			return book.id !== target;
