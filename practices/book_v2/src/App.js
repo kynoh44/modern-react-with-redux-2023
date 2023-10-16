@@ -24,6 +24,7 @@ function App() {
 
 	useEffect(() => {
 		fetchBooks();
+		console.log(books);
 	}, []);
 
 	const deleteBook = (target) => {
@@ -39,10 +40,11 @@ function App() {
 		});
 		// Error on PUT request by event handler in BookShow.js
 		console.log(response.data);
+		console.log(books);
 
 		const editById = books.map((book) => {
 			if (book.id === target) {
-				return {...book, title: newTitle};
+				return {...book, ...response.data};
 			}
 			return book;
 		});
