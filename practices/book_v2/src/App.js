@@ -34,15 +34,15 @@ function App() {
 	};
 
 	const editBook = async (target, newTitle) => {
-		//const response = await axios.put(`http://localhost:3001/books/${target}`, {
-		//	title: newTitle
-		//});
-		// Error on request.. why?????????
-		//console.log(response);
+		const response = await axios.put(`http://localhost:3001/books/${target}`, {
+			title: newTitle
+		});
+		// Error on PUT request by event handler in BookShow.js
+		console.log(response.data);
 
 		const editById = books.map((book) => {
 			if (book.id === target) {
-				return { ...book, title: newTitle };
+				return {...book, title: newTitle};
 			}
 			return book;
 		});
