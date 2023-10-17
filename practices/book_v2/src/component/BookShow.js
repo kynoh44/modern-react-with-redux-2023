@@ -9,10 +9,14 @@ function BookShow({ book, onDelete, onEdit }) {
 	};
 
 	const handleEdit = () => {
-		setShowEdit(!showEdit);		
+		setShowEdit(!showEdit);
+		console.log("clicked edit button");
+		console.log("id is not identified");
+		console.log(book.id);
 	};
 
 	const handleSubmit = (id, newTitle) => {
+		console.log(id, newTitle, "id is identified and passed when user submitted");
 		setShowEdit(false);
 		onEdit(id, newTitle);
 	}

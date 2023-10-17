@@ -24,7 +24,6 @@ function App() {
 
 	useEffect(() => {
 		fetchBooks();
-		console.log(books);
 	}, []);
 
 	const deleteBook = (target) => {
@@ -38,9 +37,6 @@ function App() {
 		const response = await axios.put(`http://localhost:3001/books/${target}`, {
 			title: newTitle
 		});
-		// Error on PUT request by event handler in BookShow.js
-		console.log(response.data);
-		console.log(books);
 
 		const editById = books.map((book) => {
 			if (book.id === target) {
