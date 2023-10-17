@@ -7,11 +7,12 @@ function BookList({ books, onDelete, onEdit }) {
 		return(<BookShow key={book.id} book={book} onDelete={onDelete} onEdit={onEdit} />)
 	});
 
-	const sharedData = useContext(BookContext);
+	const { count, incrementCount } = useContext(BookContext);
 
 	return(
 		<div className="book-list">
-			{sharedData}
+			{count}
+			<button onClick={incrementCount}>Click the shared data</button>
 			{renderedBooks}
 		</div>
 	);
