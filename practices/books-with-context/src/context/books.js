@@ -48,9 +48,17 @@ function Provider({ children }) {
 
 		setBooks(deleteById);
 	};
-	
+
+	const objToShare = {
+		books,
+		fetchBooks,
+		createBook,
+		editBook,
+		deleteBook
+	}
+
 	return(
-		<BookContext.Provider value={{/* The Single Object for sharing */}}>
+		<BookContext.Provider value={objToShare}>
 			{children}
 		</BookContext.Provider>
 	);
