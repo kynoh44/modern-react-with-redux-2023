@@ -4,47 +4,9 @@ import BookList from './component/BookList';
 import axios from 'axios';
 
 function App() {
-
-
-	const createBook = async (title) => {
-		const response = await axios.post("http://localhost:3001/books",
-		{
-			title
-		});
-		
-		const updatedBooks = [...books, response.data];
-		setBooks(updatedBooks);
-	};
-
-
-
 	useEffect(() => {
 		fetchBooks();
 	}, []);
-
-	const deleteBook = async (target) => {
-
-		await axios.delete(`http://localhost:3001/books/${target}`);
-		
-		const deleteById = books.filter((book) => {
-			return book.id !== target;
-		});
-		setBooks(deleteById);
-	};
-
-	const editBook = async (target, newTitle) => {
-		const response = await axios.put(`http://localhost:3001/books/${target}`, {
-			title: newTitle
-		});
-
-		const editById = books.map((book) => {
-			if (book.id === target) {
-				return {...book, ...response.data};
-			}
-			return book;
-		});
-		setBooks(editById);
-	};
 
 	return(
 		<div className='app'>
