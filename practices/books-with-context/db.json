@@ -1,28 +1,16 @@
 {
   "books": [
     {
-      "title": "test 0",
+      "title": "The Lord of the Rings 1",
       "id": 1
     },
     {
-      "title": "test 1",
+      "title": "The Lord of the Rings 2",
       "id": 2
     },
     {
-      "title": "test 2",
+      "title": "The Lord of the Rings 3",
       "id": 3
-    },
-    {
-      "title": "test 3",
-      "id": 4
-    },
-    {
-      "title": "test 6",
-      "id": 5
-    },
-    {
-      "title": "test 5",
-      "id": 6
     }
   ]
 }
