@@ -1,24 +1,21 @@
 import BookEdit from "./BookEdit";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import BookContext from "../context/books";
 
-function BookShow({ book, onDelete, onEdit }) {
+function BookShow({ book }) {
 	const [showEdit, setShowEdit] = useState(false);
+	const { deleteBook } = useContext(BookContext);
 	
 	const handleDelete = () => {
-		onDelete(book.id);
+		deleteBook(book.id);
 	};
 
 	const handleEdit = () => {
 		setShowEdit(!showEdit);
-		console.log("clicked edit button");
-		console.log("id is not identified");
-		console.log(book.id);
 	};
 
-	const handleSubmit = (id, newTitle) => {
-		console.log(id, newTitle, "id is identified and passed when user submitted");
-		setShowEdit(false);
-		onEdit(id, newTitle);
+	const handleSubmit = () => {
+		setShowEdit(false);;
 	}
 
 	let content = <h3>{book.title}</h3>;
