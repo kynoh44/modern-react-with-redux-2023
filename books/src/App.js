@@ -2,13 +2,18 @@ import { useState } from 'react';
 import BookCreate from './components/BookCreate';
 
 function App() {
-	const [books, setBooks] = useState(["test0", "test1", "test2"]);
+	const [books, setBooks] = useState([
+		{ id: 0, title: "test0" },
+		{ id: 1, title: "test1" },
+		{ id: 2, title: "test2" },
+		{ id: 3, title: "test3" }
+	]);
 	
 	const createBook = (title) => {
 		const updateBooks = books.filter( (book, idx) => {
 			return(
-				idx !== 2
-				//(idx !== 2) && (book != title)	// Additional filter for value
+				book.title !== title
+				//book.id !== 2
 			);
 		} );
 		setBooks(updateBooks);
