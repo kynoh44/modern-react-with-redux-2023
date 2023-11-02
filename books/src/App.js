@@ -8,7 +8,7 @@ function App() {
 		const updateBooks = books.filter( (book, idx) => {
 			return(
 				idx !== 2
-				//(idx !== 2) && (book != title)
+				//(idx !== 2) && (book != title)	// Additional filter for value
 			);
 		} );
 		setBooks(updateBooks);
