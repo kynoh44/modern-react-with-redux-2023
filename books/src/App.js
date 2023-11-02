@@ -5,7 +5,7 @@ function App() {
 	const [books, setBooks] = useState([]);
 	
 	const createBook = (title) => {
-		const updateBooks = [...books, title];
+		const updateBooks = [title, ...books];
 		setBooks(updateBooks);
 		console.log(books);
 	};
