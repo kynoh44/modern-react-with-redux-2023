@@ -23,7 +23,7 @@ function App() {
 	console.log("books.slice(n) => Return array from index[n]\n", books.slice(0));
 	console.log("books.slice(n, m) => Return array from index[n] to index[m - 1]\n", books.slice(0, 2));
 	console.log("...books.slice(n) => Return element(s) from index[n]\n", ...books.slice(0));
-	console.log("...books.slice(n, m) => Return array from index[n] to index[m - 1]\n", ...books.slice(0, 2));
+	console.log("...books.slice(n, m) => Return element(s) from index[n] to index[m - 1]\n", ...books.slice(0, 2));
 	
 	return(
 		<div>
