@@ -5,8 +5,11 @@ function App() {
 	const [books, setBooks] = useState(["test0", "test1", "test2"]);
 	
 	const createBook = (title) => {
-		const updateBooks = books.filter( (book) => {
-			return title != book;
+		const updateBooks = books.filter( (book, idx) => {
+			return(
+				idx !== 2
+				//(idx !== 2) && (book != title)
+			);
 		} );
 		setBooks(updateBooks);
 		console.clear();
