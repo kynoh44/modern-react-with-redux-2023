@@ -1,6 +1,6 @@
-function BookCreate() {
+function BookCreate({ onCreate }) {
 	return(
-		<div>BookCreate</div>
+		<div>{onCreate("test0")}</div>
 	);
 }
 
