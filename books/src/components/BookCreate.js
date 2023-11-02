@@ -1,11 +1,11 @@
 function BookCreate({ onCreate }) {
 	const handleClick = () => {
-		onCreate("test0")
+		onCreate("insert1", 1)
 	};
 
 	return(
 		<div>
-			<button onClick={handleClick}>Add in State</button>
+			<button onClick={handleClick}>Insert in State</button>
 		</div>
 	);
 }
