@@ -5,7 +5,7 @@ function BookCreate({ onCreate }) {
 
 	return(
 		<div>
-			<button onClick={handleClick}>Modify and Add in State</button>
+			<button onClick={handleClick}>Add in State</button>
 		</div>
 	);
 }

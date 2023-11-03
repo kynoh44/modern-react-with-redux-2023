@@ -10,13 +10,7 @@ function App() {
 	]);
 	
 	const createBook = (title) => {
-		const updateBooks = books.map((book) => {
-			if(book.id === 2) {
-				return { ...book, title: title, location: "Z" };	// member 추가는 안 돼요!
-			}
-			return book;
-		});
-
+		const updateBooks = [...books, { id: 4, title, location: "E" }];
 		setBooks(updateBooks);
 		console.clear();
 	};
