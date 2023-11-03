@@ -2,20 +2,12 @@ import { useState } from 'react';
 import BookCreate from './components/BookCreate';
 
 function App() {
-	const [books, setBooks] = useState([
-		{ id: 0, title: "test0" },
-		{ id: 1, title: "test1" },
-		{ id: 2, title: "test2" },
-		{ id: 3, title: "test3" }
-	]);
+	const [books, setBooks] = useState(
+		{ id: 0, title: "test0", location: "A" }
+	);
 	
 	const createBook = (title) => {
-		const updateBooks = books.filter( (book, idx) => {
-			return(
-				book.title !== title
-				//book.id !== 2
-			);
-		} );
+		const updateBooks = { ...books, title: title, location: "B", pages: 259 };
 		setBooks(updateBooks);
 		console.clear();
 	};
