@@ -2,13 +2,13 @@ import { useState } from 'react';
 import BookCreate from './components/BookCreate';
 
 function App() {
-	const [books, setBooks] = useState(		//	State as an object
-		{ id: 0, title: "test0", location: "A" }
-	);
+	const [books, setBooks] = useState([]);	//	State as an array of objects
 	
-	const createBook = () => {
-		const { title, ...rest } = books;	// The object of specified member and rest members is books
-		setBooks(rest);
+	const createBook = (title) => {
+		const updateBooks = () => {
+			return [ ...books, { id: Math.round(Math.random() * 9999), title }];
+		};
+		setBooks(updateBooks);
 		console.clear();
 	};
 
