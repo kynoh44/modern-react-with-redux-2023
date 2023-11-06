@@ -17,12 +17,10 @@ function BookShow({ book, onEdit }) {
 	if(showEdit) { content = <BookEdit book={book} onEditSubmit={handleSubmit} />; };
 
 	return(
-		<div>
-			<div>
-				{content}
-				<div>
-					<button onClick={handleEditClick}>Edit</button>
-				</div>
+		<div className='book-show'>
+			<div>{content}</div>
+			<div className='actions'>
+					<button className='edit' onClick={handleEditClick}>Edit</button>
 			</div>
 		</div>
 	);

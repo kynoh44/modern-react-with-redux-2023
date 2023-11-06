@@ -28,12 +28,10 @@ function App() {
 	console.log(books);
 
 	return(
-		<div>
-			<div>
-				{books.length}
-				<BookCreate onCreate={createBook} />
-				<BookList books={books} onEdit={editBookById} />
-			</div>
+		<div className='app'>
+			<h1>Reading List</h1>
+			<BookList books={books} onEdit={editBookById} />
+			<BookCreate onCreate={createBook} />
 		</div>
 	);
 }

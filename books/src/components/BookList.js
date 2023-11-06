@@ -7,7 +7,7 @@ function BookList({ books, onEdit }) {
 	});
 
 	return(
-		<div>
+		<div className='book-list'>
 			{renderedBooks}
 		</div>
 	);
