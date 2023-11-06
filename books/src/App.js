@@ -13,6 +13,18 @@ function App() {
 		console.clear();
 	};
 
+	const editBookById = (id, title) => {
+		const updateBooks = books.map((book) => {
+			if(id === book.id) {
+				return {...book, title};
+			}
+
+			return book;
+		});
+
+		setBooks(updateBooks);
+	};
+
 	console.log(books);
 
 	return(
@@ -20,7 +32,7 @@ function App() {
 			<div>
 				{books.length}
 				<BookCreate onCreate={createBook} />
-				<BookList books={books} />
+				<BookList books={books} onEdit={editBookById} />
 			</div>
 		</div>
 	);

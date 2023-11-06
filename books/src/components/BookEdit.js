@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
-function BookEdit({ book }) {
+function BookEdit({ book, onEdit }) {
 	const [title, setTitle] = useState(book.title);
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
+		onEdit(book.id, title);
 	};
 
 	const handleChange = (event) => {
