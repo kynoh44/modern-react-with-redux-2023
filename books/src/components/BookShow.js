@@ -8,8 +8,12 @@ function BookShow({ book, onEdit }) {
 		setShowEdit(!showEdit);
 	};
 
+	const handleSubmit = () => {
+		setShowEdit(!showEdit);
+	};
+
 	let content = <h3>{book.title}</h3>;
-	if(showEdit) { content = <BookEdit book={book} onEdit={onEdit} />; };
+	if(showEdit) { content = <BookEdit book={book} onEdit={onEdit} onEditSubmit={handleSubmit} />; };
 
 	return(
 		<div>
