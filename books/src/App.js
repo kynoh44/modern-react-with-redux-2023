@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import BookCreate from './components/BookCreate';
+import BookList from './components/BookList';
 
 function App() {
 	const [books, setBooks] = useState([]);	//	State as an array of objects
@@ -19,6 +20,7 @@ function App() {
 			<div>
 				{books.length}
 				<BookCreate onCreate={createBook} />
+				<BookList books={books} />
 			</div>
 		</div>
 	);
