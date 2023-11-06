@@ -1,9 +1,9 @@
 import BookShow from "./BookShow";
 
-function BookList({ books, onEdit }) {
+function BookList({ books, onEdit, onDelete }) {
 
 	const renderedBooks = books.map((book) => {
-		return <BookShow key={book.id} book={book} onEdit={onEdit} />;
+		return <BookShow key={book.id} book={book} onEdit={onEdit} onDelete={onDelete} />;
 	});
 
 	return(
