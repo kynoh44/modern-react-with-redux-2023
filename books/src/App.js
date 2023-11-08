@@ -13,6 +13,7 @@ function App() {
 
 	useEffect(() => {
 		fetchBooks();
+		console.log("Body of arrow function is called only at the initial rendering!!");
 	}, []);
 
 	const createBook = async (title) => {
