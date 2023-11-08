@@ -13,8 +13,8 @@ function App() {
 
 	useEffect(() => {
 		fetchBooks();
-		console.log("Body of arrow function is called in every rendering!!");
-	}, );
+		console.log("Body of arrow function is called in specific rendering!!");
+	}, [books.length]);
 
 	const createBook = async (title) => {
 		const response = await axios.post("http://localhost:3001/books", {
