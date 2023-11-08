@@ -27,11 +27,11 @@ function App() {
 		console.clear();
 	};
 
-	const editBookById = async (id, title) => {
-		const response = await axios.put(`http://localhost:3001/books/${id}`, {title, pages: 0});
+	const editBookById = async (id, title, pages) => {
+		const response = await axios.put(`http://localhost:3001/books/${id}`, {title, pages});
 		const updateBooks = books.map((book) => {
 			if(id === book.id) {
-				return {...book, title};
+				return {...book, title, pages};
 			}
 
 			return book;

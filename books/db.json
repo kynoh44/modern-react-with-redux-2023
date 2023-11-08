@@ -2,31 +2,13 @@
   "books": [
     {
       "title": "The Lord of the Rings",
+      "pages": "3333",
       "id": 1
     },
     {
       "title": "Harry Potter",
+      "pages": "4765",
       "id": 2
-    },
-    {
-      "title": "test0",
-      "pages": 4028,
-      "id": 3
-    },
-    {
-      "title": "test1",
-      "pages": 4951,
-      "id": 4
-    },
-    {
-      "title": "test2",
-      "pages": 4486,
-      "id": 5
-    },
-    {
-      "title": "test3",
-      "pages": 4874,
-      "id": 6
     }
   ]
 }
