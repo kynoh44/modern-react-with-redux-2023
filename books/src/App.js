@@ -5,7 +5,14 @@ import axios from 'axios';
 
 function App() {
 	const [books, setBooks] = useState([]);	//	State as an array of objects
-	
+
+	const fetchBooks = async () => {
+		const response = await axios.get("http://localhost:3001/books");
+		setBooks(response.data);
+	};
+	/* ERROR: Call of the function that requests with GET method occurs Infinite Loop!!! */
+	//fetchBook();
+
 	const createBook = async (title) => {
 		const response = await axios.post("http://localhost:3001/books", {
 			title
