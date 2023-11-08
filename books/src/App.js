@@ -17,7 +17,7 @@ function App() {
 
 	const createBook = async (title) => {
 		const response = await axios.post("http://localhost:3001/books", {
-			title
+			title, pages: Math.round(Math.random() * 5000)
 		});
 
 		const updateBooks = () => {
@@ -28,7 +28,7 @@ function App() {
 	};
 
 	const editBookById = async (id, title) => {
-		const response = await axios.put(`http://localhost:3001/books/${id}`, {title});
+		const response = await axios.put(`http://localhost:3001/books/${id}`, {title, pages: 0});
 		const updateBooks = books.map((book) => {
 			if(id === book.id) {
 				return {...book, title};
