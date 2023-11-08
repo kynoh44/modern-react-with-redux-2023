@@ -2,12 +2,12 @@
   "books": [
     {
       "title": "The Lord of the Rings",
-      "pages": "3333",
+      "pages": 4253,
       "id": 1
     },
     {
       "title": "Harry Potter",
-      "pages": "4765",
+      "pages": 938,
       "id": 2
     }
   ]
