@@ -31,7 +31,7 @@ function App() {
 		const response = await axios.put(`http://localhost:3001/books/${id}`, {title});
 		const updateBooks = books.map((book) => {
 			if(id === book.id) {
-				return {...book, title};
+				return {...book, ...response.data};
 			}
 			console.log("PUT Response : ", response.data);
 			return book;
