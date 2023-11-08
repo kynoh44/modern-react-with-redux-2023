@@ -10,7 +10,12 @@ function App() {
 		const response = await axios.post("http://localhost:3001/books", {
 			title
 		});
-		console.log(response);
+
+		const updateBooks = () => {
+			return [ ...books, response.data ];
+		};
+		setBooks(updateBooks);
+		console.clear();
 	};
 
 	const editBookById = (id, title) => {
