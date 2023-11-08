@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BookCreate from './components/BookCreate';
 import BookList from './components/BookList';
 import axios from 'axios';
@@ -10,8 +10,10 @@ function App() {
 		const response = await axios.get("http://localhost:3001/books");
 		setBooks(response.data);
 	};
-	/* ERROR: Call of the function that requests with GET method occurs Infinite Loop!!! */
-	//fetchBook();
+
+	useEffect(() => {
+		fetchBooks();
+	}, []);
 
 	const createBook = async (title) => {
 		const response = await axios.post("http://localhost:3001/books", {
