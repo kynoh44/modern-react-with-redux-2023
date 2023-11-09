@@ -11,6 +11,12 @@ function Provider({ children }) {
 			setCount(count + 1);
 		}
 	};
+
+	return(
+		<BookContext.Provider value={valueToShare}>
+			{children}
+		</BookContext.Provider>
+	);
 }
 
 export default BookContext;
