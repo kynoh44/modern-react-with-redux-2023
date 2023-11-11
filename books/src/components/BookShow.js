@@ -2,7 +2,7 @@ import { useState } from 'react';
 import BookEdit from './BookEdit'
 
 function BookShow({ book, onEdit, onDelete }) {
-	const [showEdit, setShowEdit] = useState(false);
+	const [showEdit, setShowEdit] = useState(false);	// Component State
 
 	const handleEditClick = () => {
 		setShowEdit(!showEdit);

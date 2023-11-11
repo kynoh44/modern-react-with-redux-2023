@@ -4,7 +4,7 @@ import BookList from './components/BookList';
 import axios from 'axios';
 
 function App() {
-	const [books, setBooks] = useState([]);	//	State as an array of objects
+	const [books, setBooks] = useState([]);	// Application State
 
 	const fetchBooks = async () => {
 		const response = await axios.get("http://localhost:3001/books");
@@ -27,7 +27,7 @@ function App() {
 		console.clear();
 	};
 
-	const editBookById = async (id, title) => {
+	const editBookById = async (id, title) => {	// Modify application state
 		const response = await axios.put(`http://localhost:3001/books/${id}`, {title});
 		const updateBooks = books.map((book) => {
 			if(id === book.id) {
@@ -40,7 +40,7 @@ function App() {
 		setBooks(updateBooks);
 	};
 
-	const deleteBookById = async (target) => {
+	const deleteBookById = async (target) => {	// Modify application state
 		const response = await axios.delete(`http://localhost:3001/books/${target}`);
 		const updateBooks = books.filter((book) => {
 			console.log("target : ", target, "DELETE Response : ", response.request.responseURL);

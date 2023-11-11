@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 function BookCreate({ onCreate }) {
-	const [title, setTitle] = useState("");
+	const [title, setTitle] = useState("");	// Component State
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
