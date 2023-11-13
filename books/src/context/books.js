@@ -45,8 +45,16 @@ function Provider({ children }) {
 
 	console.log("State data : ", books);
 
+	const objToShare = {
+		books,
+		fetchBooks,
+		createBook,
+		editBookById,
+		deleteBookById
+	};
+
 	return(
-		<BookContext.Provider value={{}}>
+		<BookContext.Provider value={objToShare}>
 			{children}
 		</BookContext.Provider>
 	);
