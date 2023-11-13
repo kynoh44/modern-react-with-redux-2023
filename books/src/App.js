@@ -1,7 +1,6 @@
-import { useState, useEffect, useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import BookCreate from './components/BookCreate';
 import BookList from './components/BookList';
-import axios from 'axios';
 import BookContext from './context/books';
 
 function App() {
