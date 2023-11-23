@@ -7,11 +7,12 @@ function App() {
 	const { fetchBooks } = useBookContext();
 	const [ counter, setCounter ] = useState(0);
 
-	useEffect(() => {
-		document.body.onclick = () => {
-			console.log("body element is clicked! Counter is ", counter);
-		};
+	const onClick = () => {
+		console.log("body element is clicked! Counter is ", counter);
+	};
 
+	useEffect(() => {
+		document.body.onclick = onClick;
 		fetchBooks();
 	}, []);
 
