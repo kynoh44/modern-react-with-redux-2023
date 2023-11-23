@@ -13,7 +13,7 @@ function App() {
 		};
 
 		fetchBooks();
-	}, [fetchBooks]);
+	}, []);
 
 	return(
 		<div className='app'>
