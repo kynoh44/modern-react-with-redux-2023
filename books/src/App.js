@@ -8,7 +8,11 @@ function App() {
 	const [ counter, setCounter ] = useState(0);
 
 	useEffect(() => {
-		document.body.onclick = console.log("body element is clicked! Counter is ", counter);
+		const listener = () => {
+			console.log("body element is clicked! Counter is ", counter);
+		};
+		document.body.addEventListener("click", listener);
+
 		fetchBooks();
 
 		const cleanUp = () => {
