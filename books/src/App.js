@@ -16,7 +16,7 @@ function App() {
 		fetchBooks();
 
 		const cleanUp = () => {
-			console.log("cleanUp!");
+			document.body.removeEventListener("click", listener);
 		};
 
 		return cleanUp;
