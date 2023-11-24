@@ -7,14 +7,16 @@ function App() {
 	const { fetchBooks } = useBookContext();
 	const [ counter, setCounter ] = useState(0);
 
-	const onClick = () => {
-		console.log("body element is clicked! Counter is ", counter);
-	};
-
 	useEffect(() => {
-		document.body.onclick = onClick;
+		document.body.onclick = console.log("body element is clicked! Counter is ", counter);
 		fetchBooks();
-	}, []);
+
+		const cleanUp = () => {
+			console.log("cleanUp!");
+		};
+
+		return cleanUp;
+	}, [fetchBooks, counter]);
 
 	return(
 		<div className='app'>
