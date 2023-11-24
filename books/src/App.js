@@ -15,11 +15,9 @@ function App() {
 
 		fetchBooks();
 
-		const cleanUp = () => {
+		return () => {
 			document.body.removeEventListener("click", listener);
 		};
-
-		return cleanUp;
 	}, [fetchBooks, counter]);
 
 	return(
