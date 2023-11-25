@@ -1,6 +1,6 @@
-function Button() {
+function Button({ text }) {
 	return(
-		<button>Hello Button!</button>
+		<button>{text}</button>
 	);
 }
 
