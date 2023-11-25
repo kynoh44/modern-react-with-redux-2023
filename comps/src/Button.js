@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";	// If you want to use this Library, import it!
-
 function Button({
 	children,
 	primary,
@@ -14,5 +12,12 @@ function Button({
 		<button>{children}</button>
 	);
 }
+
+Button.propTypes = {
+	validateStandard: ({ primary, secondary, success, warning, danger }) => {
+		/* Condition for validation */
+	}
+
+};
 
 export default Button;
