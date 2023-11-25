@@ -4,16 +4,19 @@ function App() {
 	return(
 		<div>
 			<div>
-				<Button>Happy Hacking!</Button>
+				<Button success rounded outline>Happy Hacking!</Button>
 			</div>
 			<div>
-				<Button>Buy Now</Button>
+				<Button danger outline>Buy Now</Button>
 			</div>
 			<div>
-				<Button>Sell Now</Button>
+				<Button warning>Sell Now</Button>
 			</div>
 			<div>
-				<Button>Report</Button>
+				<Button secondary outline >Report</Button>
+			</div>
+			<div>
+				<Button secondary rounded >Cancel</Button>
 			</div>
 		</div>
 	);
