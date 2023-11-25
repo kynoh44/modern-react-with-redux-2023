@@ -15,9 +15,11 @@ function Button({
 
 Button.propTypes = {
 	validateStandard: ({ primary, secondary, success, warning, danger }) => {
-		/* Condition for validation */
-	}
 
+		/* Condition for validation */
+
+		return new Error("Only one of primary, secondary, success, warning, danger can be true");
+	}
 };
 
 export default Button;
