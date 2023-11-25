@@ -15,11 +15,11 @@ function Button({
 
 Button.propTypes = {
 	validateStandard: ({ primary, secondary, success, warning, danger }) => {
-		const count = Number(primary)
-			+ Number(secondary)
-			+ Number(success)
-			+ Number(warning)
-			+ Number(danger)
+		const count = Number(!!primary)
+			+ Number(!!secondary)
+			+ Number(!!success)
+			+ Number(!!warning)
+			+ Number(!!danger)
 		if (count > 1) {
 			return new Error("Only one of primary, secondary, success, warning, danger can be true");
 		}
