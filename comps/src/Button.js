@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";	// If you want to use this Library, import it!
+
 function Button({
 	children,
 	primary,
@@ -8,10 +10,6 @@ function Button({
 	outline,
 	rounded
 }) {
-	if(primary && secondary) {
-		throw new Error("Only one of primary and secondary should be provided.");
-	}
-
 	return(
 		<button>{children}</button>
 	);
