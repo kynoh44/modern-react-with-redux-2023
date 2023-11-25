@@ -4,7 +4,7 @@ function App() {
 	return(
 		<div>
 			<div>
-				<Button primary success rounded outline>Happy Hacking!</Button>
+				<Button success rounded outline>Happy Hacking!</Button>
 			</div>
 			<div>
 				<Button danger outline>Buy Now</Button>
