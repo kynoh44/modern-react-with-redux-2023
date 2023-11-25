@@ -1,6 +1,21 @@
+import Button from "./Button";
+
 function App() {
 	return(
-		<div>Happy Hacking!</div>
+		<div>
+			<div>
+				<Button></Button>
+			</div>
+			<div>
+				<Button></Button>
+			</div>
+			<div>
+				<Button></Button>
+			</div>
+			<div>
+				<Button></Button>
+			</div>
+		</div>
 	);
 }
 
