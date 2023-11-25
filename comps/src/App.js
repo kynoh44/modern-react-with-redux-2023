@@ -7,13 +7,13 @@ function App() {
 				<Button>Happy Hacking!</Button>
 			</div>
 			<div>
-				<Button></Button>
+				<Button>Buy Now</Button>
 			</div>
 			<div>
-				<Button></Button>
+				<Button>Sell Now</Button>
 			</div>
 			<div>
-				<Button></Button>
+				<Button>Report</Button>
 			</div>
 		</div>
 	);
