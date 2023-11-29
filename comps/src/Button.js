@@ -8,15 +8,8 @@ function Button({
 	outline,
 	rounded
 }) {
-	let baseClassName = 'px-3 py-1.5 border';
-	if(primary) {
-		baseClassName += " border-blue-600 bg-blue-500 text-white";
-	} else if(secondary) {
-		baseClassName += " border-green-600 bg-green-500 text-white";
-	}
-
 	return(
-		<button className={baseClassName}>{children}</button>
+		<button className={"px-3 py-1.5 border border-blue-600 bg-blue-500 text-white"}>{children}</button>
 	);
 }
 
