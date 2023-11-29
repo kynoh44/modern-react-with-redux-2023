@@ -1,3 +1,8 @@
+import className from "classnames";	//	classNames, classname are available
+
+const finalClassName = className("px3", "py-1.5", "bg-blue-500");
+console.log(finalClassName);	//	px3 py-1.5 bg-blue-500
+
 function Button({
 	children,
 	primary,
@@ -9,7 +14,7 @@ function Button({
 	rounded
 }) {
 	return(
-		<button className={"px-3 py-1.5 border border-blue-600 bg-blue-500 text-white"}>{children}</button>
+		<button className={finalClassName}>{children}</button>
 	);
 }
 
