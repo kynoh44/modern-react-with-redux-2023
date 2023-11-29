@@ -1,7 +1,9 @@
 import className from "classnames";	//	classNames, classname are available
 
-const finalClassName = className("px3", "py-1.5", "bg-blue-500");
-console.log(finalClassName);	//	px3 py-1.5 bg-blue-500
+const finalClassName = className('px-1.5', {
+	'bg-blue-500': true,
+	'text-yellow-500': false	// Not applied
+});
 
 function Button({
 	children,
