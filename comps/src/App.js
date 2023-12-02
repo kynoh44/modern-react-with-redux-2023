@@ -6,19 +6,19 @@ function App() {
 		<div>
 			<div>
 				<Button success rounded outline>
-					<GoBell className="mr-1" />
+					<GoBell />
 					Happy Hacking!
 				</Button>
 			</div>
 			<div>
 				<Button danger outline>
-					<GoCloud className="mr-1" />
+					<GoCloud />
 					Buy Now
 				</Button>
 			</div>
 			<div>
 				<Button warning>
-					<GoDatabase className="mr-1" />
+					<GoDatabase />
 					Sell Now
 				</Button>
 			</div>
