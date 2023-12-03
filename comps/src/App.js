@@ -15,13 +15,13 @@ function App() {
 				</Button>
 			</div>
 			<div>
-				<Button danger outline>
+				<Button danger outline onMouseEnter={handleClick}>
 					<GoCloud />
 					Buy Now
 				</Button>
 			</div>
 			<div>
-				<Button warning>
+				<Button onMouseLeave={handleClick} warning>
 					<GoDatabase />
 					Sell Now
 				</Button>
