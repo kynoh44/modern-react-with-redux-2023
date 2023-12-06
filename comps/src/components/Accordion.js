@@ -3,16 +3,16 @@ import { useState } from "react";
 function Accordion({ items }) {
 	const [expandedIndex, setExpandedIndex] = useState(1);
 
+	const handleClick = (nextIndex) => {
+		setExpandedIndex(nextIndex);		//	index is not defined! then how to define? Hybrid!
+	};
+
 	const renderedItems = items.map((item, index) => {
 		const isExpanded = index === expandedIndex;
 
-		const handleClick = () => {
-			setExpandedIndex(index);
-		};
-
 		return(
 			<div key={item.id}>
-				<div onClick={handleClick}>{item.label}</div>
+				<div onClick={() => handleClick(index)}>{item.label}</div>
 				<div>{isExpanded && <div>{item.content}</div>}</div>
 			</div>
 		);
