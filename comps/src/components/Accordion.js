@@ -5,6 +5,7 @@ function Accordion({ items }) {
 	const [expandedIndex, setExpandedIndex] = useState(-1);
 
 	const handleClick = (nextIndex) => {
+		console.log("Current State : ", expandedIndex)	//	React doesn't update the state immediately..
 		if(expandedIndex === nextIndex) {
 			setExpandedIndex(-1);
 		} else {
