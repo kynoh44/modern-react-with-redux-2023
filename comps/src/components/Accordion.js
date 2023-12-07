@@ -11,7 +11,7 @@ function Accordion({ items }) {
 	const renderedItems = items.map((item, index) => {
 		const isExpanded = index === expandedIndex;
 
-		const icon = <span>{isExpanded ? <GoChevronDown /> : <GoChevronLeft />}</span>;
+		const icon = <span className="text-2xl">{isExpanded ? <GoChevronDown /> : <GoChevronLeft />}</span>;
 
 		return(
 			<div key={item.id}>
