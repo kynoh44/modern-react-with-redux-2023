@@ -2,10 +2,14 @@ import { useState } from "react";
 import { GoChevronDown, GoChevronLeft } from "react-icons/go";
 
 function Accordion({ items }) {
-	const [expandedIndex, setExpandedIndex] = useState(1);
+	const [expandedIndex, setExpandedIndex] = useState(-1);
 
 	const handleClick = (nextIndex) => {
-		setExpandedIndex(nextIndex);		//	index is not defined! then how to define? Hybrid!
+		if(expandedIndex === nextIndex) {
+			setExpandedIndex(-1);
+		} else {
+			setExpandedIndex(nextIndex);		//	index is not defined! then how to define? Hybrid!
+		}
 	};
 
 	const renderedItems = items.map((item, index) => {
