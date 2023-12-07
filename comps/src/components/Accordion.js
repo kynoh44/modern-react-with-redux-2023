@@ -15,9 +15,9 @@ function Accordion({ items }) {
 
 		return(
 			<div key={item.id}>
-				<div className="flex p-3 bg-gray-50 border-b items-center cursor-pointer" onClick={() => handleClick(index)}>
-				{icon}
+				<div className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer" onClick={() => handleClick(index)}>
 				{item.label}
+				{icon}
 				</div>
 				<div>{isExpanded && <div className="border-b p-5">{item.content}</div>}</div>
 			</div>
