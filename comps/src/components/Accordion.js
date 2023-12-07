@@ -15,17 +15,17 @@ function Accordion({ items }) {
 
 		return(
 			<div key={item.id}>
-				<div onClick={() => handleClick(index)}>
+				<div className="flex p-3 bg-gray-50 border-b items-center cursor-pointer" onClick={() => handleClick(index)}>
 				{icon}
 				{item.label}
 				</div>
-				<div>{isExpanded && <div>{item.content}</div>}</div>
+				<div>{isExpanded && <div className="border-b p-5">{item.content}</div>}</div>
 			</div>
 		);
 	});
 
 	return(
-		<div>{renderedItems}</div>
+		<div className="border-x border-t rounded">{renderedItems}</div>
 	);
 }
 
