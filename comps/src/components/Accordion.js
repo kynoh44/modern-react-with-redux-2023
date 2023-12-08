@@ -5,12 +5,14 @@ function Accordion({ items }) {
 	const [expandedIndex, setExpandedIndex] = useState(-1);
 
 	const handleClick = (nextIndex) => {
-		console.log("Current State : ", expandedIndex)	//	React doesn't update the state immediately..
-		if(expandedIndex === nextIndex) {
-			setExpandedIndex(-1);
-		} else {
-			setExpandedIndex(nextIndex);		//	index is not defined! then how to define? Hybrid!
-		}
+		setExpandedIndex((current) => {
+			console.log("Current State : ", current);
+			if(current === nextIndex) {
+				return -1;
+			} else {
+				return nextIndex;
+			}
+		});
 	};
 
 	const renderedItems = items.map((item, index) => {
