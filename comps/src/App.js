@@ -1,6 +1,9 @@
+import { useState } from "react";
 import Dropdown from "./components/Dropdown";
 
 function App() {
+	const [selection, setSelection] = useState(null);
+
 	const options = [
 		{ label: "Red", value: "red" },
 		{ label: "Green", value: "green" },
