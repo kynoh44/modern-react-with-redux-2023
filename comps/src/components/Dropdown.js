@@ -8,7 +8,7 @@ function Dropdown({ options }) {
 	};
 
 	const handleOptionClick = () => {
-		console.log("I should close");
+		setIsOpen(!isOpen);	// Clocse dropdown
 	};
 
 	const renderedOptions = options.map((option) => {
