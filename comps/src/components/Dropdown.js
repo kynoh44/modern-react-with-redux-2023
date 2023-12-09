@@ -7,13 +7,14 @@ function Dropdown({ options }) {
 		setIsOpen((currentIsOpen) => !currentIsOpen);
 	};
 
-	const handleOptionClick = () => {
+	const handleOptionClick = (option) => {
 		setIsOpen(!isOpen);	// Clocse dropdown
+		console.log(option);	// Option user clicked through <option> parameter
 	};
 
 	const renderedOptions = options.map((option) => {
 		return(
-			<div onClick={handleOptionClick} key={option.value}>
+			<div onClick={() => handleOptionClick(option)} key={option.value}>
 				{option.label}
 			</div>
 		);
