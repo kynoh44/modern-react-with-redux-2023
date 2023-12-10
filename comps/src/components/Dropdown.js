@@ -1,17 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GoChevronDown } from "react-icons/go";
 import Panel from "./Panel";
 
 function Dropdown({ options, value, onChange }) {
 	const [isOpen, setIsOpen] = useState(false);
 
+	useEffect = (() => {
+		const handler = (event) => {
+			console.log(event.target);
+		};
+
+		document.addEventListener("click", handler, true);
+	}, []);
+
 	const handleClick = () => {
 		setIsOpen((currentIsOpen) => !currentIsOpen);
 	};
 
-	console.log("Drop down Component rendered at Time 1: ", window.timeTwo = performance.now());
+	//console.log("Drop down Component rendered at Time 1: ", window.timeTwo = performance.now());
 	const handleOptionClick = (option) => {
-		console.log("User-defined event handler occured at Time 3 : ", window.timeOne = performance.now());
+		//console.log("User-defined event handler occured at Time 3 : ", window.timeOne = performance.now());
 		setIsOpen(!isOpen);	// Clocse dropdown
 		onChange(option);
 	};

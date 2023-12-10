@@ -6,7 +6,7 @@ function App() {
 
 	const handleSelect = (option) => {
 		setSelection(option);
-		console.log("User-clicked : ", option);
+		//console.log("User-clicked : ", option);
 	};
 
 	const options = [
@@ -17,7 +17,6 @@ function App() {
 	console.log("-------React Rerender Started-----------");
 	return(
 		<div className="flex">
-			<Dropdown options={options} value={selection} onChange={handleSelect} />
 			<Dropdown options={options} value={selection} onChange={handleSelect} />
 		</div>
 	);
