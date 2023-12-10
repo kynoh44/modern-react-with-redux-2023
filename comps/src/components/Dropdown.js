@@ -9,7 +9,9 @@ function Dropdown({ options, value, onChange }) {
 		setIsOpen((currentIsOpen) => !currentIsOpen);
 	};
 
+	console.log("Drop down Component rendered at Time 1: ", window.timeTwo = performance.now());
 	const handleOptionClick = (option) => {
+		console.log("User-defined event handler occured at Time 3 : ", window.timeOne = performance.now());
 		setIsOpen(!isOpen);	// Clocse dropdown
 		onChange(option);
 	};
