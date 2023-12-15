@@ -5,7 +5,7 @@ import Panel from "./Panel";
 function Dropdown({ options, value, onChange }) {
 	const [isOpen, setIsOpen] = useState(false);
 
-	useEffect = (() => {
+	useEffect(() => {
 		const handler = (event) => {
 			console.log(event.target);
 		};
