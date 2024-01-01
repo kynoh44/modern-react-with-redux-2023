@@ -14,7 +14,7 @@ function DropdownPage() {
 		{ label: "Green", value: "green" },
 		{ label: "Blue", value: "blue" },
 	];
-	console.log("-------React Rerender Started-----------");
+	//console.log("-------React Rerender Started-----------");
 	return(
 		<div className="flex">
 			<Dropdown options={options} value={selection} onChange={handleSelect} />
