@@ -1,6 +1,8 @@
 function Table() {
 	return(
-		Table
+		<div>
+			Table
+		</div>
 	);
 }
 
