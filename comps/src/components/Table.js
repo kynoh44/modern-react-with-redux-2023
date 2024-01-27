@@ -1,7 +1,7 @@
-function Table() {
+function Table({ data }) {
 	return(
 		<div>
-			Table
+			{data.length}
 		</div>
 	);
 }
