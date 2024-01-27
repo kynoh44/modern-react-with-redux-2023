@@ -8,7 +8,7 @@ function Table({ data, config }) {
 	const renderedRows = data.map((fruit) => {
 		const renderedCells = config.map((column) => {
 			return(
-				<td key={column.label}>{column.render(fruit)}</td>
+				<td className="p-2" key={column.label}>{column.render(fruit)}</td>
 			);
 		});
 		return(
