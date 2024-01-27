@@ -20,40 +20,40 @@ function ModalPage() {
 
 	return(
 		<div>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
-			</p>
 			<Button onClick={handleClick} primary>
 				Open Modal
 			</Button>
 			{showModal && modal}
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel ante eu enim facilisis aliquet non at libero. Ut nibh neque, maximus nec libero consectetur, auctor eleifend nulla. Praesent et sapien sit amet ante consectetur rhoncus. Sed ut accumsan nunc, sit amet ullamcorper arcu. Nulla consectetur leo mauris. In molestie lorem in laoreet varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sed lorem sollicitudin, sollicitudin metus tincidunt, tristique eros. Curabitur lobortis nulla rutrum erat vestibulum, viverra vestibulum lacus consequat. Praesent id elit tortor. 
+			</p>
 		</div>
 	);
 
