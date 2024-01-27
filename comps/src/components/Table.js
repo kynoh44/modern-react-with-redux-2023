@@ -1,4 +1,14 @@
 function Table({ data }) {
+	const renderedRows = data.map((fruit) => {
+		return(
+			<tr key={fruit.name}>
+				<td>{fruit.name}</td>
+				<td>{fruit.color}</td>
+				<td>{fruit.score}</td>
+			</tr>
+		);
+	});
+	console.log(renderedRows);
 	return(
 		<table>
 			<thead>
@@ -9,26 +19,7 @@ function Table({ data }) {
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>Orange</td>
-					<td>orange</td>
-					<td>5</td>
-				</tr>
-				<tr>
-					<td>Apple</td>
-					<td>red</td>
-					<td>3</td>
-				</tr>
-				<tr>
-					<td>Banana</td>
-					<td>yellow</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>Lime</td>
-					<td>green</td>
-					<td>4</td>
-				</tr>
+				{renderedRows}
 			</tbody>
 		</table>
 	);
