@@ -1,7 +1,11 @@
+function Echo({ children }) {
+	return children;
+}
+
 function Table({ data, config, keyFn }) {
 	const renderedHeaders = config.map((column) => {
 		if (column.header) {
-			return column.header();
+			return <Echo key={column.label}>{column.header()}</Echo>;
 		}
 		return(
 			<th key={column.label}>{column.label}</th>
