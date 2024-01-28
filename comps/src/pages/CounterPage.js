@@ -8,22 +8,22 @@ function useCounter(initialCount) {
 		console.log(count);
 	}, [count]);
 
-	const handleClick = () => {
+	const increment = () => {
 		setCount(count + 1);
 	};
 
 	return {
-		count,	// 'count: count' is condesed
-		handleClick,	// 'handleClick: handleClick' is condesed
+		count,
+		increment,
 	};
 }
 
 function CounterPage({ initialCount }) {
-	const { count, handleClick } = useCounter(initialCount);
+	const { count, increment } = useCounter(initialCount);
 	return (
 		<div>
 			<h1>Count is {count}</h1>
-			<Button onClick={handleClick}>
+			<Button onClick={increment}>
 				Increment
 			</Button>
 
