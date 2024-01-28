@@ -19,6 +19,7 @@ function useSomething() {
 }
 
 function CounterPage({ initialCount }) {
+	const { count, handleClick } = useSomething();
 	return (
 		<div>
 			<h1>Count is {count}</h1>
