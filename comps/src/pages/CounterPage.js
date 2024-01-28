@@ -13,8 +13,8 @@ function useSomething() {
 	};
 
 	return {
-		count: count,
-		handleClick: handleClick,
+		count,	// 'count: count' is condesed
+		handleClick,	// 'handleClick: handleClick' is condesed
 	};
 }
 
