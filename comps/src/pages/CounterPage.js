@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Button from '../components/Button'
 
-function useSomething(initialCount) {
+function useCounter(initialCount) {
 	const [count, setCount] = useState(initialCount);
 
 	useEffect(() => {
@@ -19,7 +19,7 @@ function useSomething(initialCount) {
 }
 
 function CounterPage({ initialCount }) {
-	const { count, handleClick } = useSomething(initialCount);
+	const { count, handleClick } = useCounter(initialCount);
 	return (
 		<div>
 			<h1>Count is {count}</h1>
