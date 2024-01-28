@@ -15,9 +15,9 @@ function CounterPage({ initialCount }) {
 	};
 
 	const handleChange = (event) => {
-		const value = event.target.value;
+		const value = parseInt(event.target.value);
 
-		console.log(typeof value);
+		console.log(value);
 	};
 
 	return (
