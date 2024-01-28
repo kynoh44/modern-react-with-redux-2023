@@ -15,9 +15,9 @@ function CounterPage({ initialCount }) {
 	};
 
 	const handleChange = (event) => {
-		const value = parseInt(event.target.value);
+		const value = parseInt(event.target.value) || 0;
 
-		console.log(value);
+		setValueToAdd(value);
 	};
 
 	return (
@@ -30,7 +30,7 @@ function CounterPage({ initialCount }) {
 			<form>
 				<label>Add a lot!</label>
 				<input
-					value={valueToAdd}
+					value={valueToAdd || ""}
 					onChange={handleChange}
 					type="number"
 					className="p-1 m-3 bg-gray-50 border border-gray-300"
