@@ -43,14 +43,12 @@ function CounterPage({ initialCount }) {
 	const increment = () => {
 		dispatch({
 			type: INCREMENT_COUNT,
-			payload: state.count,
 		});
 	};
 
 	const decrement = () => {
 		dispatch({
 			type: DECREMENT_COUNT,
-			payload: state.count,
 		});
 	};
 
