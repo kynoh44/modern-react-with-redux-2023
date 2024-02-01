@@ -32,8 +32,6 @@ const reducer = (state, action) => {
 };
 
 function CounterPage({ initialCount }) {
-	//const [count, setCount] = useState(initialCount);
-	//const [valueToAdd, setValueToAdd] = useState(0);
 	const [state, dispatch] = useReducer(reducer, {
 		count: initialCount,
 		valueToAdd: 0,
@@ -66,7 +64,6 @@ function CounterPage({ initialCount }) {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		//setCount(count + valueToAdd);
 		dispatch({
 			type: ADD_VALUE,
 			payload: state.count + state.valueToAdd,
