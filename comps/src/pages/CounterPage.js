@@ -8,29 +8,27 @@ const CHANGE_VALUE_TO_ADD = 'change-value-to-add';
 const ADD_VALUE = 'add-value';
 
 const reducer = (state, action) => {
-	if (action.type === INCREMENT_COUNT) {
-		return {
+	switch (action.type) {
+		case INCREMENT_COUNT: return {
 			...state,
 			count: state.count + 1,
-		};
-	} else if (action.type === DECREMENT_COUNT) {
-		return {
+		}
+		case DECREMENT_COUNT: return {
 			...state,
 			count: state.count - 1,
 		}
-	} else if (action.type === CHANGE_VALUE_TO_ADD) {
-		return {
+		case CHANGE_VALUE_TO_ADD: return {
 			...state,
 			valueToAdd: action.payload,
 		}
-	} else if (action.type === ADD_VALUE) {
-		return {
+		case ADD_VALUE: return {
 			count: action.payload,
 			valueToAdd: 0,
 		}
+		default:
+			return state;
+			//throw new Error('unexpected action type' + action.type);	// Optional
 	}
-
-	return state;
 };
 
 function CounterPage({ initialCount }) {
