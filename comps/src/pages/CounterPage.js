@@ -65,10 +65,7 @@ function CounterPage({ initialCount }) {
 		event.preventDefault();
 		dispatch({
 			type: ADD_VALUE,
-			payload: {
-				count: state.count + state.valueToAdd,
-				valueToAdd: 0,
-			},
+			payload: state.count + state.valueToAdd,
 		})
 	};
 
