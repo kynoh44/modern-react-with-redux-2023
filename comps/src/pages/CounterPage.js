@@ -13,7 +13,7 @@ const reducer = (state, action) => {
 			...state,
 			count: state.count - 1,
 		}
-	} else if (action.type === 'set-value') {
+	} else if (action.type === 'change-value-to-add') {
 		return {
 			...state,
 			valueToAdd: action.payload,
@@ -56,7 +56,7 @@ function CounterPage({ initialCount }) {
 		const value = parseInt(event.target.value) || 0;
 
 		dispatch({
-			type: 'set-value',
+			type: 'change-value-to-add',
 			payload: value,
 		});
 	};
