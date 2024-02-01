@@ -3,10 +3,29 @@ import Button from '../components/Button'
 import Panel from '../components/Panel';
 
 const reducer = (state, action) => {
-	return {
-		...state,
-		count: state.count + 1,
-	};
+	if (action.type === 'increment-count') {
+		return {
+			...state,
+			count: state.count + 1,
+		};
+	} else if (action.type === 'decrement-count') {
+		return {
+			...state,
+			count: state.count - 1,
+		}
+	} else if (action.type === 'set-value') {
+		return {
+			...state,
+			valueToAdd: action.payload,
+		}
+	} else if (action.type === 'add-value') {
+		return {
+			count: action.payload,
+			valueToAdd: 0,
+		}
+	}
+
+	return state;
 };
 
 function CounterPage({ initialCount }) {
@@ -20,23 +39,35 @@ function CounterPage({ initialCount }) {
 	console.log(state);
 
 	const increment = () => {
-		dispatch();
+		dispatch({
+			type: 'increment-count',
+			payload: state.count,
+		});
 	};
 
 	const decrement = () => {
-		//setCount(count - 1);
+		dispatch({
+			type: 'decrement-count',
+			payload: state.count,
+		});
 	};
 
 	const handleChange = (event) => {
 		const value = parseInt(event.target.value) || 0;
 
-		//setValueToAdd(value);
+		dispatch({
+			type: 'set-value',
+			payload: value,
+		});
 	};
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		//setCount(count + valueToAdd);
-		//setValueToAdd(0);
+		dispatch({
+			type: 'add-value',
+			payload: state.count + state.valueToAdd,
+		})
 	};
 
 	return (
