@@ -2,23 +2,28 @@ import { useReducer } from 'react';
 import Button from '../components/Button'
 import Panel from '../components/Panel';
 
+const INCREMENT_COUNT = 'increment-count';
+const DECREMENT_COUNT = 'decrement-count';
+const CHANGE_VALUE_TO_ADD = 'change-value-to-add';
+const ADD_VALUE = 'add-value';
+
 const reducer = (state, action) => {
-	if (action.type === 'increment-count') {
+	if (action.type === INCREMENT_COUNT) {
 		return {
 			...state,
 			count: state.count + 1,
 		};
-	} else if (action.type === 'decrement-count') {
+	} else if (action.type === DECREMENT_COUNT) {
 		return {
 			...state,
 			count: state.count - 1,
 		}
-	} else if (action.type === 'change-value-to-add') {
+	} else if (action.type === CHANGE_VALUE_TO_ADD) {
 		return {
 			...state,
 			valueToAdd: action.payload,
 		}
-	} else if (action.type === 'add-value') {
+	} else if (action.type === ADD_VALUE) {
 		return {
 			count: action.payload,
 			valueToAdd: 0,
@@ -40,14 +45,14 @@ function CounterPage({ initialCount }) {
 
 	const increment = () => {
 		dispatch({
-			type: 'increment-count',
+			type: INCREMENT_COUNT,
 			payload: state.count,
 		});
 	};
 
 	const decrement = () => {
 		dispatch({
-			type: 'decrement-count',
+			type: DECREMENT_COUNT,
 			payload: state.count,
 		});
 	};
@@ -56,7 +61,7 @@ function CounterPage({ initialCount }) {
 		const value = parseInt(event.target.value) || 0;
 
 		dispatch({
-			type: 'change-value-to-add',
+			type: CHANGE_VALUE_TO_ADD,
 			payload: value,
 		});
 	};
@@ -65,7 +70,7 @@ function CounterPage({ initialCount }) {
 		event.preventDefault();
 		//setCount(count + valueToAdd);
 		dispatch({
-			type: 'add-value',
+			type: ADD_VALUE,
 			payload: state.count + state.valueToAdd,
 		})
 	};
