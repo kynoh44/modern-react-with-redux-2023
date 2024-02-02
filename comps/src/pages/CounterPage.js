@@ -23,7 +23,8 @@ const reducer = (state, action) => {
 		}
 		case ADD_VALUE: return {
 			...state,
-			...action.payload,
+			count: state.count + state.valueToAdd,
+			valueToAdd: 0,
 		}
 		default:
 			return state;
@@ -64,10 +65,6 @@ function CounterPage({ initialCount }) {
 		event.preventDefault();
 		dispatch({
 			type: ADD_VALUE,
-			payload: {
-				count: state.count + state.valueToAdd,
-				valueToAdd: 0,
-			},
 		})
 	};
 
