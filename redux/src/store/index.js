@@ -19,17 +19,17 @@ const store = configureStore({
 	},
 });
 
-//const startingState = store.getState();
-//console.log(startingState);
-//console.log(JSON.stringify(startingState));
+const startingState = store.getState();
+console.log(startingState);
+console.log(JSON.stringify(startingState));
 
-//store.dispatch({
-//	type: 'song/addSong',
-//	payload: 'New song!',
-//});
+store.dispatch({
+	type: 'song/addSong',
+	payload: 'New song!',
+});
 
-//const finalState = store.getState();
-//console.log(JSON.stringify(finalState));
+const finalState = store.getState();
+console.log(JSON.stringify(finalState));
 
 console.log(songsSlice.actions);
 console.log(songsSlice.actions.addSong());
