@@ -19,4 +19,6 @@ const store = configureStore({
 	},
 });
 
-console.log(store);
+const startingState = store.getState();
+console.log(startingState);
+console.log(JSON.stringify(startingState));
