@@ -23,10 +23,9 @@ const startingState = store.getState();
 console.log(startingState);
 console.log(JSON.stringify(startingState));
 
-store.dispatch({
-	type: 'song/addSong',
-	payload: 'New song!',
-});
+store.dispatch(
+	songsSlice.actions.addSong("New song!"),
+);
 
 const finalState = store.getState();
 console.log(JSON.stringify(finalState));
