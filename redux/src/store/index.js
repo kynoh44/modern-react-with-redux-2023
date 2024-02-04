@@ -33,3 +33,5 @@ console.log(JSON.stringify(finalState));
 console.log(songsSlice.actions);
 console.log(songsSlice.actions.addSong());
 console.log(songsSlice.actions.addSong('Love Story'));
+
+export { store };
