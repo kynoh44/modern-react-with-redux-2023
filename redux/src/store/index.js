@@ -35,3 +35,5 @@ console.log(songsSlice.actions.addSong());
 console.log(songsSlice.actions.addSong('Love Story'));
 
 export { store };
+
+export const { addSong } = songsSlice.actions;
