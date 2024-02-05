@@ -17,10 +17,10 @@ const songsSlice = createSlice({
 		builder.addCase('movie/reset', (state, action) => {
 			return [];
 		});
-	}
+	},
 });
 
-const movieSlice = createSlice({
+const moviesSlice = createSlice({
 	name: 'movie',
 	initialState: [],
 	reducers: {
@@ -40,7 +40,7 @@ const movieSlice = createSlice({
 const store = configureStore({
 	reducer: {
 		songs: songsSlice.reducer,
-		movies: movieSlice.reducer,
+		movies: moviesSlice.reducer,
 	},
 });
 
@@ -61,4 +61,4 @@ console.log(JSON.stringify(startingState));
 
 export { store };
 export const { addSong, removeSong } = songsSlice.actions;
-export const { addMovie, removeMovie, reset } = movieSlice.actions;
+export const { addMovie, removeMovie, reset } = moviesSlice.actions;
