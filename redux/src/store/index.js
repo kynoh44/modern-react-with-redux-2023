@@ -1,31 +1,13 @@
-import { configureStore, createSlice, createAction } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
+import { songsReducer, addSong, removeSong } from "./slices/SongsSlice";
+import { moviesReducer, addMovie, removeMovie } from "./slices/MoviesSlice";
+import { reset } from "./actions";
 
 const store = configureStore({
 	reducer: {
-		songs: songsSlice.reducer,
-		movies: moviesSlice.reducer,
+		songs: songsReducer,
+		movies: moviesReducer,
 	},
 });
 
-const startingState = store.getState();
-console.log(startingState);
-console.log(JSON.stringify(startingState));
-
-//store.dispatch(
-//	songsSlice.actions.addSong("New song!"),
-//);
-
-//const finalState = store.getState();
-//console.log(JSON.stringify(finalState));
-
-//console.log(songsSlice.actions);
-//console.log(songsSlice.actions.addSong());
-//console.log(songsSlice.actions.addSong('Love Story'));
-
-export { store };
-export const { addSong, removeSong } = songsSlice.actions;
-export const { addMovie, removeMovie } = moviesSlice.actions;
-
-//console.log(moviesSlice.actions);
-//console.log(moviesSlice.actions.reset);
-//console.log(moviesSlice.actions.reset.toString());
+export { store, reset, addSong, removeSong, addMovie, removeMovie };
