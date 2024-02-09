@@ -1,7 +1,19 @@
 function CarForm() {
 	return (
-		<div>
-			CarFrom
+		<div className="car-form panal">
+			<h4 className="subtitle is-3">Add Car</h4>
+			<form>
+				<div className="field-group">
+					<div className="field">
+						<label className="label">Name</label>
+						<input
+							className="input is-expanded"
+							value={name}
+							onChange={handleNameChange}
+						/>
+					</div>
+				</div>
+			</form>
 		</div>
 	);
 }
