@@ -1,4 +1,16 @@
+import { useDispatch, useSelector } from "react-redux";
+import { changeName } from "../store";
+
 function CarForm() {
+	const dispatch = useDispatch();
+	const name = useSelector((state) => {
+		return state.form.name;
+	});
+
+	const handleNameChange = (event) => {
+		dispatch(changeName(event.target.value));
+	};
+
 	return (
 		<div className="car-form panal">
 			<h4 className="subtitle is-3">Add Car</h4>
