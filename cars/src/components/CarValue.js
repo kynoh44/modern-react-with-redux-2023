@@ -6,9 +6,7 @@ function CarValue() {
 			return car.name.toLowerCase().includes(searchTerm.toLowerCase());
 		});
 
-		return filteredCars.reduce((acc, car) => {
-			return acc + car.cost;
-		}, 0);
+		return filteredCars.reduce((acc, car) => acc + car.cost, 0);
 	});
 
 	return (
