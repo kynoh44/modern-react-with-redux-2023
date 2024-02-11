@@ -11,7 +11,7 @@ function UsersList() {
 	});
 
 	useEffect(() => {
-		dispatch(fetchUsers());
+		console.log(dispatch(fetchUsers()));
 	}, [dispatch]);
 
 	const handleUserAdd = () => {
