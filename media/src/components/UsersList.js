@@ -15,7 +15,7 @@ function UsersList() {
 
 	if (isLoading) {
 		return (
-			<Skeleton times={6} />
+			<Skeleton times={6} className="h-10 w-full" />
 		);
 	}
 
