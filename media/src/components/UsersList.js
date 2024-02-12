@@ -9,9 +9,9 @@ function useThunk(thunk) {
 	const [error, setError] = useState(null);
 	const dispatch = useDispatch();
 
-	const runThunk = useCallback(() => {
+	const runThunk = useCallback((arg) => {
 		setIsLoading(true);
-		dispatch(thunk())
+		dispatch(thunk(arg))
 			.unwrap()
 			.catch(err => setError(err))
 			.finally(() => setIsLoading(false));
@@ -22,10 +22,8 @@ function useThunk(thunk) {
 
 function UsersList() {
 	const [ doFetchUsers, isLoadingUsers, loadingUsersError ] = useThunk(fetchUsers);
-	const [isCreatingUser, setIsCreatingUser] = useState(false);
-	const [creatingUserError, setCreatingUserError] = useState(null);
+	const [ doAddUser, isCreatingUser, creatingUserError ] = useThunk(addUser);
 
-	const dispatch = useDispatch();
 	const { data } = useSelector((state) => {
 		return state.users;	// { data: [], isLoading: false, error: null }
 	});
@@ -35,15 +33,7 @@ function UsersList() {
 	}, [doFetchUsers]);
 
 	const handleUserAdd = () => {
-		setIsCreatingUser(true);
-		dispatch(addUser())
-		.unwrap()
-		.catch((err) => {
-			setCreatingUserError(err);
-		})
-		.finally(() => {
-			setIsCreatingUser(false);
-		});
+		doAddUser();
 	};
 
 	if (isLoadingUsers) {
