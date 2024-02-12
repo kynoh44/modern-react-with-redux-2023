@@ -15,9 +15,15 @@ function UsersList() {
 
 	useEffect(() => {
 		setIsLoadingUsers(true);
-		console.log(dispatch(fetchUsers()));
-		// BAD!!
-		//setIsLoadingUsers(false);
+		dispatch(fetchUsers())
+			.unwrap()
+			.then(() => {
+				console.log('SUCCESS');
+			})
+			.catch(() => {
+				console.log('FAIL');
+			});
+
 	}, [dispatch]);
 
 	const handleUserAdd = () => {
