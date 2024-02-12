@@ -18,10 +18,11 @@ function UsersList() {
 		dispatch(fetchUsers())
 			.unwrap()
 			.then(() => {
-				console.log('SUCCESS');
+				setIsLoadingUsers(false);
 			})
-			.catch(() => {
-				console.log('FAIL');
+			.catch((err) => {
+				setLoadingUsersError(err);
+				setIsLoadingUsers(false);
 			});
 
 	}, [dispatch]);
