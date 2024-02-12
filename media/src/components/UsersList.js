@@ -17,13 +17,12 @@ function UsersList() {
 		setIsLoadingUsers(true);
 		dispatch(fetchUsers())
 			.unwrap()
-			.catch((err) => {
-				setLoadingUsersError(err);
-			})
-			.finally(() => {
-				setIsLoadingUsers(false);
-			});
-
+			.catch((err) =>
+				setLoadingUsersError(err)
+			)
+			.finally(() =>
+				setIsLoadingUsers(false)
+			);
 	}, [dispatch]);
 
 	const handleUserAdd = () => {
