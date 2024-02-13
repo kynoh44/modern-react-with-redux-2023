@@ -14,6 +14,9 @@ export const store = configureStore({
 	},
 });
 
+// Temporary to inspect Redux Store
+window.store = store;
+
 setupListeners(store.dispatch);
 
 export * from './thunks/fetchUsers';
