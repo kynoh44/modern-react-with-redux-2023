@@ -7,7 +7,17 @@ const photosApi = createApi({
 	}),
 	endpoints(builder) {
 		return {
-			fetchPhotos: builder.query({}),
+			fetchPhotos: builder.query({
+				query: (album) => {
+					return {
+						url: '/photos',
+						params: {
+							albumId: album.id,
+						},
+						method: 'GET',
+					};
+				},
+			}),
 			addPhoto: builder.mutation({}),
 			removePhoto: builder.mutation({}),
 		};
