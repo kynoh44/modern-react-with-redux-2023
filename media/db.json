@@ -30,5 +30,11 @@
       "title": "Electronic Rubber Mouse"
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "id": "26e1",
+      "albumId": "10",
+      "url": "https://loremflickr.com/150/150/abstract?lock=60449"
+    }
+  ]
 }
