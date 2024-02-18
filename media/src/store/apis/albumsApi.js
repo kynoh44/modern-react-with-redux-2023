@@ -42,7 +42,7 @@ const albumsApi = createApi({
 					const tags = result.map(album => {
 						return {
 							type: 'Album',
-							id: user.id,
+							id: album.id,
 						};
 					});
 					tags.push({
