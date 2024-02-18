@@ -3,6 +3,14 @@
     {
       "id": "1",
       "name": "Myra"
+    },
+    {
+      "id": "26f6",
+      "name": "Dr. Gary Murphy"
+    },
+    {
+      "id": "56a5",
+      "name": "Jacquelyn Monahan"
     }
   ],
   "albums": [
@@ -10,6 +18,16 @@
       "id": "10",
       "title": "Hiking Trip",
       "userId": "1"
+    },
+    {
+      "id": "4843",
+      "userId": "26f6",
+      "title": "Small Granite Pants"
+    },
+    {
+      "id": "f4c7",
+      "userId": "56a5",
+      "title": "Electronic Rubber Mouse"
     }
   ],
   "photos": []
