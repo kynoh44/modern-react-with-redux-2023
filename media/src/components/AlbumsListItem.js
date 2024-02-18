@@ -11,12 +11,12 @@ function AlbumsListItem({ album }) {
 	};
 
 	const header = (
-		<div>
-			<Button loading={results.isLading} onClick={handleRemoveAlbum}>
+		<>
+			<Button className="mr-2" loading={results.isLading} onClick={handleRemoveAlbum}>
 				<GoTrashcan />
 			</Button>
 			{album.title}
-		</div>
+		</>
 	);
 	return (
 		<ExpandablePanel key={album.id} header={header}>
